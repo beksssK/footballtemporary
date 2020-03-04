@@ -1,0 +1,43 @@
+{
+    "name": "custom-image-block",
+    "settings": [
+        {
+            "id": "text-box",
+            "type": "text",
+            "label": "Main Heading",
+            "default": "Image Title"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image_block",
+            "name": "my image block",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "imageLink",
+                    "label": "image link"
+                },
+                {
+                    "type": "text",
+                    "id": "imageTitle",
+                    "label": "Image heading",
+                    "default": "Image heading"
+                }
+            ]
+
+        }
+    ],
+    "presets": [
+        {
+            "name": "Custom Image Sections",
+            "category": "custom-sections",
+            "blocks": [
+                {
+                    "type": "image_block"
+                }
+            ]
+        }
+    ]
+
+}

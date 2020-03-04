@@ -1,0 +1,43 @@
+.MainFooter{
+    background: #111111;
+    color: #fff;
+    padding: 20px 0 10px;
+}
+
+.FooterInfo_title{
+    font-size: 21px;
+}
+
+.copyright{
+    font-size: 14px;
+    color: #ccc;
+}
+
+.social{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 16px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.social .fab{
+    font-size: 18px;
+    color: #0074F0;
+}
+
+.social:hover{
+    background: #0074F0;
+}
+.social:hover .fab{
+    color: #fff;
+}
+
+@media (max-width: 450px){
+    .MainFooter{
+        text-align: center;
+    }
+}

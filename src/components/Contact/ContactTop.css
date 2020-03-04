@@ -1,0 +1,8 @@
+.ContactTop{
+    background: url("../../assets/images/contacts-bg.jpg") 50% 44% no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.ContactTop_header{
+    padding-top: 250px !important;
+}
