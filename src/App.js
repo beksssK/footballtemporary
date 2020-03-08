@@ -4,6 +4,7 @@ import Layout from "./components/Layout/Layout";
 import {Route, Switch} from "react-router-dom";
 import Home from "./containers/Home/Home";
 import Contact from "./containers/Contact/Contact";
+import Admin from "./containers/Admin/Admin";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Switch>
                 <Route path='/' exact component={Home}/>
                 <Route path='/contacts' exact component={Contact}/>
+                <Route path='/admin' exact component={Admin}/>
             </Switch>
         </Layout>
     );
