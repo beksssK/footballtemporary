@@ -30,6 +30,11 @@ const items = [
         altText: 'Secretary',
         caption: 'Our Secretary'
     },
+    {
+        src: require('../../../assets/staff/staff-general-manager'),
+        altText: 'General Manager',
+        caption: 'General Manager'
+    }
 ];
 
 const MyCarousel = (props) => {
