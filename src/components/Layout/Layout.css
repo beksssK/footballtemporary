@@ -2,29 +2,29 @@
     background-size: cover;
     min-height: 100vh; /* todo: temp */
 }
-.MainLayout > div:first-child > div:first-child {
+.page-top__header {
     padding-top: 200px;
     margin: 0 auto 0 60%;
     width: 200px;
 }
 
-.MainLayout > div:first-child > div:first-child h2{
+.page-top__title{
     color: #fff;
     font-weight: 700;
     font-size: 70px;
 }
 
-.MainLayout > div:first-child{
+.page-top{
     background-size: cover;
     height: 350px;
 }
 
 @media (max-width: 700px) {
-    .MainLayout > div:first-child > div:first-child {
+    .page-top__header {
         margin: 0 auto 0 auto;
         font-size: 40px;
     }
-    .MainLayout > div:first-child > div:first-child h2{
+    .page-top__title{
         font-size: 40px;
     }
 }

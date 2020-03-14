@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Col, Form, FormGroup, Input, InputGroup, Label, Row} from "reactstrap";
-import profilePlaceholder from '../assets/images/placeholder_male1.jpg';
+import profilePlaceholder from '../../assets/images/placeholder_male1.jpg';
 
 const AddFrom = () => {
     const [placeholder, setPlaceholder] = useState(profilePlaceholder);

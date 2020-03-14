@@ -3,9 +3,9 @@ import './ContactTop.css';
 
 const ContactTop = () => {
     return (
-        <div className='ContactTop'>
-            <div className='ContactTop_header'>
-                <h2>Contacts</h2>
+        <div className='ContactTop page-top'>
+            <div className='ContactTop_header page-top__header'>
+                <h2 className='page-top__title'>Contacts</h2>
             </div>
         </div>
     );

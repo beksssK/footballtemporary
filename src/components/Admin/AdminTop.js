@@ -3,9 +3,9 @@ import './AdminTop.css';
 
 const AdminTop = () => {
     return (
-        <div className='AdminTop'>
-            <div className="AdminTop_header">
-                <h2>Admin</h2>
+        <div className='AdminTop page-top'>
+            <div className="page-top__header">
+                <h2 className='page-top__title'>Admin</h2>
             </div>
         </div>
     );

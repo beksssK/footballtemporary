@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container} from "reactstrap";
-import AddFrom from "../AddFrom";
+import AddFrom from "../Form/AddFrom";
 
 const AdminMiddle = () => {
     return (

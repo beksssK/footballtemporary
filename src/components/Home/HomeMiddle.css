@@ -1,0 +1,121 @@
+.HomeMiddle{
+    padding: 50px 0 20px;
+}
+
+.info__header{
+
+}
+
+.info__main-title{
+    padding-bottom: 30px;
+}
+
+.info__section{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.info__title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info__pic{
+    border-radius: 6px;
+    width: 400px;
+    height: 200px;
+}
+
+
+.info__item{
+    width: 50%;
+}
+
+.who__pic{
+    background: url("../../assets/images/managers.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.what__pic{
+    background: url("../../assets/images/managers-what.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.why__pic{
+    background: url("../../assets/images/managers-why.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.staff__pic{
+    height: unset;
+}
+
+.info__text-left{
+    padding: 10px 100px 5px 0;
+
+}
+
+.info__text-right{
+    padding: 10px 0 5px 100px;
+}
+
+
+@media all and (max-width: 999px){
+    .info__pic{
+        border-radius: 6px;
+        width: 270px;
+    }
+    .info__text-left{
+        padding: 10px 25px 5px 0;
+
+    }
+
+    .info__text-right{
+        padding: 10px 0 5px 33px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .info__title{
+        font-size: 22px;
+    }
+    .info__section{
+        flex-direction: column;
+    }
+    .info__text{
+        font-size: 15px;
+    }
+    .info__text-left{
+        padding: 0 0 30px 0;
+
+    }
+    .info__text-right{
+        padding: 0 0 30px 0;
+    }
+    .info__pic {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .info__text{
+        text-align: center;
+    }
+    .info__main-title{
+        padding-bottom: 0;
+        text-align: center;
+        font-size: 23px;
+    }
+    .info__item{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 430px){
+    .info__pic {
+        width: 290px;
+    }
+
+}
