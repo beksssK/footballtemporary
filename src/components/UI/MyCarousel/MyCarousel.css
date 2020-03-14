@@ -8,6 +8,9 @@
 .carousel-caption h3{
     color: #0074F0;
 }
+.carousel-caption.d-none{
+    display: block !important;
+}
 .carousel-caption p{
     display: none;
 }
