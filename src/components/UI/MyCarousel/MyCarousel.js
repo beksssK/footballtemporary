@@ -24,7 +24,12 @@ const items = [
         src: require('../../../assets/staff/organizer'),
         altText: 'Organizer',
         caption: 'Our Organizer'
-    }
+    },
+    {
+        src: require('../../../assets/staff/staff-secretary'),
+        altText: 'Secretary',
+        caption: 'Our Secretary'
+    },
 ];
 
 const MyCarousel = (props) => {
