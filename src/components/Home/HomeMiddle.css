@@ -80,6 +80,9 @@
 }
 
 @media all and (max-width: 600px){
+    .info__section{
+        margin-bottom: 0;
+    }
     .info__title{
         font-size: 22px;
     }

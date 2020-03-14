@@ -95,7 +95,7 @@ const HomeMiddle = () => {
                 </section>
                 <section className='info__section info__why container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>Why they choose us?</h2>
+                        <h2 className='info__title'>Why do they choose us?</h2>
                         <p className='info__text info__text-left'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda debitis quam quisquam tenetur. Assumenda commodi doloribus eos est fugiat hic pariatur provident quae qui sed! Alias aut distinctio dolores harum iusto modi nostrum odio perspiciatis, quaerat voluptate?</p>
                     </div>
                     <div className='info__item'>
