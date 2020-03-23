@@ -7,6 +7,7 @@ import Contact from "./containers/Contact/Contact";
 import Admin from "./containers/Admin/Admin";
 
 const App = () => {
+    console.log('checking commit');
     return (
         <Layout>
             <Switch>
