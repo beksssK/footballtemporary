@@ -6,9 +6,9 @@ import Home from "./containers/Home/Home";
 import Contact from "./containers/Contact/Contact";
 import Admin from "./containers/Admin/Admin";
 import Players from "./containers/Players/Players";
+import SinglePlayer from "./containers/SinglePlayer/SinglePlayer";
 
 const App = () => {
-    console.log('checking commit');
     return (
         <Layout>
             <Switch>
@@ -16,6 +16,7 @@ const App = () => {
                 <Route path='/contacts' exact component={Contact}/>
                 <Route path='/admin' exact component={Admin}/>
                 <Route path='/players' exact component={Players}/>
+                <Route path='/players/:id' exact component={SinglePlayer}/>
             </Switch>
         </Layout>
     );

@@ -12,7 +12,6 @@ const FootballerThumbnail = props => {
     let image = imageNotAvailable;
 
     if(props.image && props.imgType){
-        console.log('here');
         image = `data:${props.imgType};base64, ${props.image}`;
     }
     return <img alt="product" src={image} style={styles} className="img-thumbnail" />;

@@ -8,15 +8,13 @@ const SportsmanCard = (props) => {
 
     }, []);
     return (
-        <Card className='SportsmanCard col-md-3'>
-            <div>
+        <Card className='SportsmanCard col-md-3' onClick={props.onClick}>
                 <FootballerThumbnail image={props.image} imgType={props.imgType}/>
                 <CardBody className='text-center'>
                     <CardTitle>{props.name} {props.surname}</CardTitle>
                     <CardSubtitle className='mb-4'>{props.position}</CardSubtitle>
-                    <Button>Button</Button>
+                    <Button className='mt-auto'>Button</Button>
                 </CardBody>
-            </div>
         </Card>
     );
 };

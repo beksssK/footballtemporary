@@ -1,0 +1,9 @@
+.SinglePlayerTop{
+    background: url("../../assets/images/football-bg.jpg") 50% 80% no-repeat;
+    background-size: cover;
+}
+
+.SinglePlayerMiddle{
+    min-height: 600px;
+    font-size: 20px;
+}

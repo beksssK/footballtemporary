@@ -38,7 +38,6 @@ const AddFrom = () => {
             console.log(playerForm[key]);
             formData.append(key, playerForm[key]);
         });
-        console.log(formData);
         try{
             await axiosApi.post('/sportsmen', formData);
             alert('Player added')
@@ -48,7 +47,6 @@ const AddFrom = () => {
         }
 
     };
-    console.log(playerForm);
     return (
         <div className='py-4 text-primary'>
             <Form onSubmit={postPlayer}>

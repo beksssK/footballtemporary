@@ -3,12 +3,12 @@ import PlayersTop from "../../components/Players/PlayersTop";
 import PlayersMiddle from "../../components/Players/PlayersMiddle";
 
 
-const Players = () => {
+const Players = (props) => {
 
     return (
         <>
             <PlayersTop/>
-            <PlayersMiddle/>
+            <PlayersMiddle history={props.history}/>
         </>
     );
 };
