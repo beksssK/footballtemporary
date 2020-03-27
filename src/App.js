@@ -8,6 +8,7 @@ import Admin from "./containers/Admin/Admin";
 import Players from "./containers/Players/Players";
 
 const App = () => {
+    console.log('checking commit');
     return (
         <Layout>
             <Switch>
