@@ -28,7 +28,8 @@ const MainFooter = () => {
                     <Col md='4' className='text-center'>
                         <a className='social' href='#1' target='_blank'><i className="fab fa-instagram"/></a>
                         <a className='social' href='#2' target='_blank'><i className="fab fa-facebook-f"/></a>
-                        <a className='social' href='#3' target='_blank'><i className="fab fa-twitter"/></a>
+                        {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                        <a className='social' href='https://twitter.com/Joneskobby41?s=20' target='_blank'><i className="fab fa-twitter"/></a>
                     </Col>
                 </Row>
             </Container>

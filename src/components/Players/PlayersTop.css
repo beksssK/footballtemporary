@@ -1,0 +1,8 @@
+.PlayersTop{
+    background: url("../../assets/images/football-bg.jpg") 50% 80% no-repeat;
+    background-size: cover;
+}
+
+.playersTop__title{
+    font-size: 56px;
+}
