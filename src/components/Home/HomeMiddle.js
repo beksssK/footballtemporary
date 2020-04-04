@@ -1,6 +1,8 @@
 import React from 'react';
 import './HomeMiddle.css';
 import MyCarousel from "../UI/MyCarousel/MyCarousel";
+import whyUs from '../../assets/video/why-us.mp4';
+import whyUsPoster from '../../assets/images/managers-why.jpg';
 
 const HomeMiddle = () => {
     console.log('check');
@@ -48,12 +50,15 @@ const HomeMiddle = () => {
                     <div className='info__item'>
                         <h2 className='info__title'>Why do they choose us?</h2>
                         <p className='info__text info__text-left'>
-                            We establish relationships based on professionalism, transparency and trust: values that define our philosophy and the way we work. Our code of ethics is more than a declaration of intent; it shows us the way to follow and has allow us to obtain recognition and results endorsement.
+                            We establish relationships based on professionalism, transparency and trust: values that define our philosophy and the way we work. Our code of ethics is more than a declaration of intent; it shows us the way to follow and has allow us to obtain recognition and results endorsement. We know that trust is something vague, built and maintained through fidelity. The professional relationship we have with our athletes goes beyond merely providing services. We feel the defeats, the successes and the tension  of athletes like ours and we learn from the challenges we go through successively.
                         </p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic why__pic'>
+                            <video width="400" autoPlay loop height="250" poster={whyUsPoster}>
+                                <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
 
+                            </video>
                         </div>
                     </div>
                 </section>
@@ -112,12 +117,15 @@ const HomeMiddle = () => {
                     <div className='info__item'>
                         <h2 className='info__title'>Why do they choose us?</h2>
                         <p className='info__text info__text-left'>
-                            We establish relationships based on professionalism, transparency and trust: values that define our philosophy and the way we work. Our code of ethics is more than a declaration of intent; it shows us the way to follow and has allow us to obtain recognition and results endorsement.
+                            We establish relationships based on professionalism, transparency and trust: values that define our philosophy and the way we work. Our code of ethics is more than a declaration of intent; it shows us the way to follow and has allow us to obtain recognition and results endorsement. We know that trust is something vague, built and maintained through fidelity. The professional relationship we have with our athletes goes beyond merely providing services. We feel the defeats, the successes and the tension  of athletes like ours and we learn from the challenges we go through successively.
                         </p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic why__pic'>
+                            <video width="400" autoPlay loop height="250" poster={whyUsPoster}>
+                                <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
 
+                            </video>
                         </div>
                     </div>
                 </section>

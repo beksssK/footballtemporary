@@ -5,8 +5,8 @@ import {Col, FormFeedback, FormGroup, Input, Label} from "reactstrap";
 const FormElement = props => {
   return (
     <FormGroup row>
-      <Label sm={2} for={props.propertyName}>{props.title}</Label>
-      <Col sm={10}>
+      <Label sm={3} for={props.propertyName}>{props.title}</Label>
+      <Col sm={9}>
         <Input
           invalid={!!props.error}
           type={props.type}

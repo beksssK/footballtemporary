@@ -26,8 +26,8 @@
 
 .info__pic{
     border-radius: 6px;
-    width: 400px;
-    height: 200px;
+    width: 450px;
+    height: 250px;
     margin: 0 auto;
 }
 
@@ -37,18 +37,18 @@
 }
 
 .who__pic{
-    background: url("../../assets/images/managers.jpg") 50% 50% no-repeat;
+    background: url("../../assets/staff/who-are-we.jpg") 50% 32% no-repeat;
     background-size: cover;
 }
 
 .what__pic{
-    background: url("../../assets/images/managers-what.jpg") 50% 50% no-repeat;
+    background: url("../../assets/staff/what-do-we-do.jpg") 50% 36% no-repeat;
     background-size: cover;
 }
 
 .why__pic{
-    background: url("../../assets/images/managers-why.jpg") 50% 50% no-repeat;
-    background-size: cover;
+    /*background: url("../../assets/images/managers-why.jpg") 50% 50% no-repeat;*/
+    /*background-size: cover;*/
 }
 
 .staff__pic{
