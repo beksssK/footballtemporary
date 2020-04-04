@@ -14,7 +14,7 @@ const ContactBottom = () => {
                             </div>
                             <div className='ContactBlock__card_text'>
                                 <h5>Address</h5>
-                                <p>Ahunbaev str. 134, Mir Avenue, Bishkek, Kyrgyzstan</p>
+                                <p>Jaiyl Baatyra 77.68 Bishkek Kyrgyzstan</p>
                             </div>
                         </div>
                         <div className='ContactBlock__card'>
@@ -23,7 +23,7 @@ const ContactBottom = () => {
                             </div>
                             <div className='ContactBlock__card_text'>
                                 <h5>Phone</h5>
-                                <p>+996 554 440 961</p>
+                                <p>+996 709 44 09 61</p>
                             </div>
                         </div>
                         <div className='ContactBlock__card'>
@@ -32,7 +32,7 @@ const ContactBottom = () => {
                             </div>
                             <div className='ContactBlock__card_text'>
                                 <h5>Mail</h5>
-                                <p>example@gmail.com</p>
+                                <p>hazootu@gmail.com</p>
                             </div>
                         </div>
                     </div>
