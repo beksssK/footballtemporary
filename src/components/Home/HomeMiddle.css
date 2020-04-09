@@ -24,6 +24,7 @@
     text-align: center;
 }
 
+
 .info__pic{
     border-radius: 6px;
     width: 450px;
@@ -86,6 +87,8 @@
     }
     .info__title{
         font-size: 22px;
+        margin-bottom: 20px;
+        margin-top: 25px;
     }
     .info__section{
         flex-direction: column;

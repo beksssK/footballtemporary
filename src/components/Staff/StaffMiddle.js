@@ -6,6 +6,7 @@ import secretaryImg from '../../assets/staff/secretary.jpg';
 import organizerImg from '../../assets/staff/organizer.jpg';
 import CEOImg from '../../assets/staff/CEO.jpg';
 import accountantImg from '../../assets/staff/accountantImg.jpg';
+import partnerImg from '../../assets/staff/parnter.jpg';
 
 const STAFF = {
     gManager: {
@@ -23,13 +24,13 @@ const STAFF = {
     organizer: {
         position: 'Organizer',
         name: 'Allen Mixon',
-        info: 'Our Organizer Mr Allen carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Mr OTU coordinate with the general manager Mr Nurudeen Kasim in the arrangements of day - day activities and company travel plans in accordance of our clients',
+        info: 'Our Organizer Mr Otu carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Mr OTU coordinate with the general manager Mr Nurudeen Kasim in the arrangements of day - day activities and company travel plans in accordance of our clients',
         photo: organizerImg
     },
     CEO: {
         position: 'CEO',
         name: 'Allen Mixon',
-        info: 'Our CEO Mr Hazo OTU.  he is responsible for making major corporate decisions, managing the overall operations and resources of a company, acting as the main point of communication between the board of directors.',
+        info: 'Our CEO Mr Hazo OTU.  he is responsible for making major corporate decisions, managing the overall operations and resources of the company, acting as the main point of communication between the board of directors.',
         photo: CEOImg
     },
     accountant: {
@@ -38,7 +39,12 @@ const STAFF = {
         info: 'She prepares financial information to Management, she prepare asset, liability and capital account entries. She also maintains customer confidence and protects operations by keeping financial information confidential.she is honest and a hard worker in all duties of the accounting sector.',
         photo: accountantImg
     },
-
+    partner: {
+        position: 'Partner',
+        name: 'Josip Zbiljski',
+        info: 'lorem aksjfdljsafj asjklfjkasljf askjfkldajsfk jasjfklsja fjadklsfj ksajf jsak j safkjasjf',
+        photo: partnerImg
+    }
 
 };
 
@@ -93,6 +99,17 @@ const StaffMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <div className='info__pic accountant__pic' style={{'background-image': `url(${STAFF.accountant.photo})`}}>
+
+                        </div>
+                    </div>
+                </section>
+                <section className='info__section info__staff container'>
+                    <div className='info__item'>
+                        <h2 className='info__title'>{STAFF.partner.position}</h2>
+                        <p className='info__text info__text-left'>{STAFF.partner.info}</p>
+                    </div>
+                    <div className='info__item'>
+                        <div className='info__pic partner__pic' style={{'background-image': `url(${STAFF.partner.photo})`}}>
 
                         </div>
                     </div>

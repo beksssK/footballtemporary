@@ -55,7 +55,7 @@ const HomeMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <div className='info__pic why__pic'>
-                            <video width="400" autoPlay loop height="250" poster={whyUsPoster}>
+                            <video width="270" autoPlay loop height="250" poster={whyUsPoster}>
                                 <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
 
                             </video>
@@ -122,7 +122,7 @@ const HomeMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <div className='info__pic why__pic'>
-                            <video width="400" autoPlay loop height="250" poster={whyUsPoster}>
+                            <video width="270" autoPlay loop height="250" poster={whyUsPoster}>
                                 <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
 
                             </video>
