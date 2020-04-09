@@ -36,7 +36,7 @@ const STAFF = {
     accountant: {
         position: 'Accountant',
         name: 'Greta Adjei',
-        info: 'She prepares financial information to Management, she prepare asset, liability and capital account entries. She also maintains customer confidence and protects operations by keeping financial information confidential.she is honest and a hard worker in all duties of the accounting sector.',
+        info: 'Our accountant Greta Adjei Okunor prepares financial information to Management, she prepare asset, liability and capital account entries. She also maintains customer confidence and protects operations by keeping financial information confidential.she is honest and a hard worker in all duties of the accounting sector.',
         photo: accountantImg
     },
     partner: {
