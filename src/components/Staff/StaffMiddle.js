@@ -167,7 +167,7 @@ const StaffMiddle = () => {
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.accountant.position}</h2>
-                        <p className='info__text info__text-right'>{STAFF.accountant.info}</p>
+                        <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic accountant__pic' style={{'background-image': `url(${STAFF.accountant.photo})`}}>
