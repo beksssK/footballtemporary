@@ -35,7 +35,7 @@ const STAFF = {
     accountant: {
         position: 'Accountant',
         name: 'Greta Adjei',
-        info: '',
+        info: 'She prepares financial information to Management, she prepare asset, liability and capital account entries. She also maintains customer confidence and protects operations by keeping financial information confidential.she is honest and a hard worker in all duties of the accounting sector.',
         photo: accountantImg
     },
 
@@ -52,72 +52,49 @@ const StaffMiddle = () => {
                 </section>
                 <section className='info__section who container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>CEO</h2>
-                        <p className='info__text info__text-left'>
-                            <b>Allen</b> is an International, standard and global private sports agency; providing soccer trials,international camps for aspiring footballers ranging from age 15 and above. HNBM manages talents who needs our assistance in various ways.our agency with the  coordination of our partners and other soccer agents try to fix our clients into clubs for trials or for signing on when necessary.   Currently we made some transfers to the golf countries under our management  and looking forward to other parts of the world for trials or signings. We're always ready to embrace client's  that are interested in cooperating with our sports agency concerning the above mentioned details.
-                        </p>
+                        <h2 className='info__title'>{STAFF.CEO.position}</h2>
+                        <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic ceo__pic'>
-
-                        </div>
+                        <div className='info__pic ceo__pic' style={{'background-image': `url(${STAFF.CEO.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__what container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>Program Organizer</h2>
-                        <div className='info__text info__text-right'>
-                            <ol>
-                                <li>We negotiate a professional contract or trial for our (players) clients.</li>
-                                <li>We closely follow each of our players to know their condition in club</li>
-                                <li>Our agency also finds clubs that allow our players or clients to evolve.</li>
-                                <li>We establish a career plan for our clients</li>
-                                <li>.We also suggest an investment plans to our clients to ensure that our player or client is comfortable after their soccer career.</li>
-                            </ol>
-                        </div>
+                        <h2 className='info__title'>{STAFF.gManager.position}</h2>
+                        <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic organizer__pic'>
-
-                        </div>
+                        <div className='info__pic gManager__pic' style={{'background-image': `url(${STAFF.gManager.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__why container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>Accountant</h2>
-                        <p className='info__text info__text-left'>
-                            We establish relationships based on professionalism, transparency and trust: values that define our philosophy and the way we work. Our code of ethics is more than a declaration of intent; it shows us the way to follow and has allow us to obtain recognition and results endorsement. We know that trust is something vague, built and maintained through fidelity. The professional relationship we have with our athletes goes beyond merely providing services. We feel the defeats, the successes and the tension  of athletes like ours and we learn from the challenges we go through successively.
-                        </p>
+                        <h2 className='info__title'>{STAFF.organizer.position}</h2>
+                        <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic account__pic'>
-                            <video width="400" autoPlay loop height="250" poster={whyUsPoster}>
-                                <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
-
-                            </video>
-                        </div>
+                        <div className='info__pic organizer__pic' style={{'background-image': `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>Secretary</h2>
-                        <p className='info__text info__text-right'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem, cumque debitis doloribus eaque eius enim eos in ipsam itaque labore laborum magni neque nihil nulla odit officia perspiciatis provident quasi quidem quisquam, tempora temporibus tenetur ut veritatis! Ab culpa ea, iste magni necessitatibus sequi?</p>
+                        <h2 className='info__title'>{STAFF.secretary.position}</h2>
+                        <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic secretary__pic'>
-
-                        </div>
+                        <div className='info__pic secretary__pic' style={{'background-image': `url(${STAFF.secretary.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
-                        <div className='info__pic secretary__pic'>
-
-                        </div>
+                        <h2 className='info__title'>{STAFF.accountant.position}</h2>
+                        <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
-                        <h2 className='info__title'>Secretary</h2>
-                        <p className='info__text info__text-left'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem, cumque debitis doloribus eaque eius enim eos in ipsam itaque labore laborum magni neque nihil nulla odit officia perspiciatis provident quasi quidem quisquam, tempora temporibus tenetur ut veritatis! Ab culpa ea, iste magni necessitatibus sequi?</p>
+                        <div className='info__pic accountant__pic' style={{'background-image': `url(${STAFF.accountant.photo})`}}>
+
+                        </div>
                     </div>
                 </section>
             </div>
@@ -130,70 +107,53 @@ const StaffMiddle = () => {
                 </section>
                 <section className='info__section who container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>CEO</h2>
-                        <p className='info__text info__text-left'>
-                            <b>HNBM SPORTS AGENCY</b> is an International, standard and global private sports agency; providing soccer trials,international camps for aspiring footballers ranging from age 15 and above. HNBM manages talents who needs our assistance in various ways.our agency with the  coordination of our partners and other soccer agents try to fix our clients into clubs for trials or for signing on when necessary.   Currently we made some transfers to the golf countries under our management  and looking forward to other parts of the world for trials or signings. We're always ready to embrace client's  that are interested in cooperating with our sports agency concerning the above mentioned details.
-                        </p>
+                        <h2 className='info__title'>{STAFF.CEO.position}</h2>
+                        <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic who__pic'>
+                        <div className='info__pic ceo__pic' style={{'background-image': `url(${STAFF.CEO.photo})`}}>
 
                         </div>
                     </div>
                 </section>
                 <section className='info__section info__what container'>
                     <div className='info__item'>
-                        <div className='info__pic what__pic'>
+                        <div className='info__pic gManager__pic' style={{'background-image': `url(${STAFF.gManager.photo})`}}>
 
                         </div>
                     </div>
                     <div className='info__item'>
-                        <h2 className='info__title'>General Manager / Advisor</h2>
-                        <div className='info__text info__text-right'>
-                            <ol>
-                                <li>We negotiate a professional contract or trial for our (players) clients.</li>
-                                <li>We closely follow each of our players to know their condition in club</li>
-                                <li>Our agency also finds clubs that allow our players or clients to evolve.</li>
-                                <li>We establish a career plan for our clients</li>
-                                <li>.We also suggest an investment plans to our clients to ensure that our player or client is comfortable after their soccer career.</li>
-                            </ol>
-                        </div>
+                        <h2 className='info__title'>{STAFF.gManager.position}</h2>
+                        <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                 </section>
                 <section className='info__section info__why container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>Program Organizer</h2>
-                        <p className='info__text info__text-left'>
-                            We establish relationships based on professionalism, transparency and trust: values that define our philosophy and the way we work. Our code of ethics is more than a declaration of intent; it shows us the way to follow and has allow us to obtain recognition and results endorsement. We know that trust is something vague, built and maintained through fidelity. The professional relationship we have with our athletes goes beyond merely providing services. We feel the defeats, the successes and the tension  of athletes like ours and we learn from the challenges we go through successively.
-                        </p>
+                        <h2 className='info__title'>{STAFF.organizer.position}</h2>
+                        <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic why__pic'>
-                            <video width="400" autoPlay loop height="250" poster={whyUsPoster}>
-                                <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
-
-                            </video>
-                        </div>
+                        <div className='info__pic organizer__pic' style={{'background-image': `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
-                        <div className='info__pic staff__pic'>
+                        <div className='info__pic secretary__pic' style={{'background-image': `url(${STAFF.secretary.photo})`}}>
 
                         </div>
                     </div>
                     <div className='info__item'>
-                        <h2 className='info__title'>Secretary</h2>
-                        <p className='info__text info__text-right'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem, cumque debitis doloribus eaque eius enim eos in ipsam itaque labore laborum magni neque nihil nulla odit officia perspiciatis provident quasi quidem quisquam, tempora temporibus tenetur ut veritatis! Ab culpa ea, iste magni necessitatibus sequi?</p>
+                        <h2 className='info__title'>{STAFF.secretary.position}</h2>
+                        <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>Accountant</h2>
-                        <p className='info__text info__text-right'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem, cumque debitis doloribus eaque eius enim eos in ipsam itaque labore laborum magni neque nihil nulla odit officia perspiciatis provident quasi quidem quisquam, tempora temporibus tenetur ut veritatis! Ab culpa ea, iste magni necessitatibus sequi?</p>
+                        <h2 className='info__title'>{STAFF.accountant.position}</h2>
+                        <p className='info__text info__text-right'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic staff__pic'>
+                        <div className='info__pic accountant__pic' style={{'background-image': `url(${STAFF.accountant.photo})`}}>
 
                         </div>
                     </div>

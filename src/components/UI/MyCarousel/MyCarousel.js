@@ -40,7 +40,7 @@ const MyCarousel = (props) => {
         if (animating) return;
         const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
         setActiveIndex(nextIndex);
-    }
+    };
 
     const previous = () => {
         if (animating) return;
