@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomeTop.css';
-import {NavLink} from "react-router-dom";
 
 const HomeTop = () => {
     return (

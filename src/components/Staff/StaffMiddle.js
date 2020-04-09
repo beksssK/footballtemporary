@@ -12,7 +12,7 @@ const STAFF = {
     gManager: {
         position: 'General Manager / Adviser',
         name: 'Nurudeen Kasim',
-        info: 'He is the general manger of the company and also adviser at the same time. He manages the affairs of the company in and out. The role of Kasim is to closely watch and  tap the young individual talented athletes, he is also the company area scout and plays a role in the management team as well.',
+        info: 'Our general manger/adviser. Mr Nurudeen Kasim manages the external and internal affairs of the company.He also plays another role as the company\'s adviser. He manages the affairs of the company,he is a member of the board of directors as well',
         photo: gManagerImg
     },
     secretary: {
@@ -24,7 +24,7 @@ const STAFF = {
     organizer: {
         position: 'Organizer',
         name: 'Allen Mixon',
-        info: 'Our Organizer Mr Otu carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Mr OTU coordinate with the general manager Mr Nurudeen Kasim in the arrangements of day - day activities and company travel plans in accordance of our clients',
+        info: 'Our Organizer Mr Otu carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Mr Allen coordinate with our general manager mr nurudeen kasim in the arrangements of day - day activities and company travel plans in accordance of our clients',
         photo: organizerImg
     },
     CEO: {
@@ -173,6 +173,17 @@ const StaffMiddle = () => {
                         <div className='info__pic accountant__pic' style={{'background-image': `url(${STAFF.accountant.photo})`}}>
 
                         </div>
+                    </div>
+                </section>
+                <section className='info__section info__staff container'>
+                    <div className='info__item'>
+                        <div className='info__pic partner__pic' style={{'background-image': `url(${STAFF.partner.photo})`}}>
+
+                        </div>
+                    </div>
+                    <div className='info__item'>
+                        <h2 className='info__title'>{STAFF.partner.position}</h2>
+                        <p className='info__text info__text-right'>{STAFF.partner.info}</p>
                     </div>
                 </section>
             </div>
