@@ -1,0 +1,9 @@
+.StaffTop{
+    background: url("../../assets/images/football-bg.jpg") 50% 80% no-repeat;
+    background-size: cover;
+}
+
+.ceo__pic{
+    background: url("../../assets/staff/what-do-we-do.jpg") 50% 36% no-repeat;
+    background-size: cover;
+}

@@ -26,8 +26,10 @@ const MainFooter = () => {
                     </Col>
                     <Col md='4'/>
                     <Col md='4' className='text-center'>
-                        <a className='social' href='#1' target='_blank'><i className="fab fa-instagram"/></a>
-                        <a className='social' href='#2' target='_blank'><i className="fab fa-facebook-f"/></a>
+                        {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                        <a className='social' href='https://www.instagram.com/hnbm.sa/' target='_blank'><i className="fab fa-instagram"/></a>
+                        {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                        <a className='social' href='https://www.facebook.com/haza.hnbm' target='_blank'><i className="fab fa-facebook-f"/></a>
                         {/* eslint-disable-next-line react/jsx-no-target-blank */}
                         <a className='social' href='https://twitter.com/Joneskobby41?s=20' target='_blank'><i className="fab fa-twitter"/></a>
                     </Col>

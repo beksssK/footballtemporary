@@ -7,6 +7,7 @@ import Contact from "./containers/Contact/Contact";
 import Admin from "./containers/Admin/Admin";
 import Players from "./containers/Players/Players";
 import SinglePlayer from "./containers/SinglePlayer/SinglePlayer";
+import Staff from "./containers/Staff/Staff";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path='/contacts' exact component={Contact}/>
                 <Route path='/admin' exact component={Admin}/>
                 <Route path='/players' exact component={Players}/>
+                <Route path='/staff' exact component={Staff}/>
                 <Route path='/players/:id' exact component={SinglePlayer}/>
             </Switch>
         </Layout>

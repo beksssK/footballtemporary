@@ -30,13 +30,13 @@ const Toolbar = () => {
                             <NavLink exact tag={RouterNav} className='text-light' to='/' >Home</NavLink>
                         </NavItem>
                         <NavItem className='mx-2'>
-                            <NavLink exact tag={RouterNav} className='text-light' to='players' >All Footballers</NavLink>
+                            <NavLink exact tag={RouterNav} className='text-light' to='/players' >All Footballers</NavLink>
                         </NavItem>
                         <NavItem className='mx-2'>
-                            <NavLink exact tag={RouterNav} className='text-light' to='contacts' >Contact us</NavLink>
+                            <NavLink exact tag={RouterNav} className='text-light' to='/contacts' >Contact us</NavLink>
                         </NavItem>
                         <NavItem className='mx-2'>
-                            <NavLink exact tag={RouterNav} className='text-light' to='others' >Other sports</NavLink>
+                            <NavLink exact tag={RouterNav} className='text-light' to='/staff' >Our staff</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
