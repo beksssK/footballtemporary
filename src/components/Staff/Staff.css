@@ -7,6 +7,14 @@
     padding-top: 170px;
 }
 
+@media all and (max-width: 600px){
+    .staff__header{
+        margin-left: 45%;
+        margin-right: 0;
+        width: unset;
+    }
+}
+
 .info__pic {
     background-repeat: no-repeat;
 }

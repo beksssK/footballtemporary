@@ -7,7 +7,6 @@ const HomeTop = () => {
         <div className='HomeTop page-top'>
             <div className='page-top__header'>
                 <h2 className='page-top__title'>Welcome</h2>
-                <NavLink to='/admin'>kk</NavLink>
             </div>
         </div>
     );
