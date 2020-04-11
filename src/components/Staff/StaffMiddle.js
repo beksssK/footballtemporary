@@ -24,7 +24,7 @@ const STAFF = {
     organizer: {
         position: 'Organizer',
         name: 'Allen Mixon',
-        info: 'Our Organizer Mr Otu carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Mr Allen coordinate with our general manager mr nurudeen kasim in the arrangements of day - day activities and company travel plans in accordance of our clients',
+        info: 'Our Organizer Mr Allen carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Mr Allen coordinate with our general manager Mr Nurudeen Kasim in the arrangements of day - day activities and company travel plans in accordance of our clients',
         photo: organizerImg
     },
     CEO: {
@@ -35,8 +35,8 @@ const STAFF = {
     },
     accountant: {
         position: 'Accountant',
-        name: 'Greta Adjei',
-        info: 'Our accountant Greta Adjei Okunor prepares financial information to Management, she prepare asset, liability and capital account entries. She also maintains customer confidence and protects operations by keeping financial information confidential.she is honest and a hard worker in all duties of the accounting sector.',
+        name: 'Greta Okunor',
+        info: 'Our accountant Greta Okunor prepares financial information to Management, she prepare asset, liability and capital account entries. She also maintains customer confidence and protects operations by keeping financial information confidential.she is honest and a hard worker in all duties of the accounting sector.',
         photo: accountantImg
     },
     partner: {
