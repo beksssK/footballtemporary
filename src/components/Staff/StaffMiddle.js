@@ -1,6 +1,4 @@
 import React from 'react';
-import whyUsPoster from "../../assets/images/managers-why.jpg";
-import whyUs from "../../assets/video/why-us.mp4";
 import gManagerImg from '../../assets/staff/gManager.jpg';
 import secretaryImg from '../../assets/staff/secretary.jpg';
 import organizerImg from '../../assets/staff/organizer.jpg';
@@ -42,7 +40,7 @@ const STAFF = {
     partner: {
         position: 'Partner',
         name: 'Josip Zbiljski',
-        info: 'lorem aksjfdljsafj asjklfjkasljf askjfkldajsfk jasjfklsja fjadklsfj ksajf jsak j safkjasjf',
+        info: 'He is our chiefs-scout and partner Josip Zbilijski assets our player before placement on to get various clubs ',
         photo: partnerImg
     }
 
@@ -62,7 +60,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic ceo__pic' style={{'background-image': `url(${STAFF.CEO.photo})`}}/>
+                        <div className='info__pic ceo__pic' style={{backgroundImage: `url(${STAFF.CEO.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__what container'>
@@ -71,7 +69,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic gManager__pic' style={{'background-image': `url(${STAFF.gManager.photo})`}}/>
+                        <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__why container'>
@@ -80,7 +78,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic organizer__pic' style={{'background-image': `url(${STAFF.organizer.photo})`}}/>
+                        <div className='info__pic organizer__pic' style={{backgroundImage: `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
@@ -89,7 +87,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic secretary__pic' style={{'background-image': `url(${STAFF.secretary.photo})`}}/>
+                        <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
@@ -98,7 +96,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic accountant__pic' style={{'background-image': `url(${STAFF.accountant.photo})`}}>
+                        <div className='info__pic accountant__pic' style={{backgroundImage: `url(${STAFF.accountant.photo})`}}>
 
                         </div>
                     </div>
@@ -109,7 +107,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.partner.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic partner__pic' style={{'background-image': `url(${STAFF.partner.photo})`}}>
+                        <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}>
 
                         </div>
                     </div>
@@ -128,14 +126,14 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic ceo__pic' style={{'background-image': `url(${STAFF.CEO.photo})`}}>
+                        <div className='info__pic ceo__pic' style={{backgroundImage: `url(${STAFF.CEO.photo})`}}>
 
                         </div>
                     </div>
                 </section>
                 <section className='info__section info__what container'>
                     <div className='info__item'>
-                        <div className='info__pic gManager__pic' style={{'background-image': `url(${STAFF.gManager.photo})`}}>
+                        <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}>
 
                         </div>
                     </div>
@@ -150,12 +148,12 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic organizer__pic' style={{'background-image': `url(${STAFF.organizer.photo})`}}/>
+                        <div className='info__pic organizer__pic' style={{backgroundImage: `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
-                        <div className='info__pic secretary__pic' style={{'background-image': `url(${STAFF.secretary.photo})`}}>
+                        <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}>
 
                         </div>
                     </div>
@@ -170,14 +168,14 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic accountant__pic' style={{'background-image': `url(${STAFF.accountant.photo})`}}>
+                        <div className='info__pic accountant__pic' style={{backgroundImage: `url(${STAFF.accountant.photo})`}}>
 
                         </div>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
-                        <div className='info__pic partner__pic' style={{'background-image': `url(${STAFF.partner.photo})`}}>
+                        <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}>
 
                         </div>
                     </div>

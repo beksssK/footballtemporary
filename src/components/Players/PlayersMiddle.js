@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchFootballers} from "../../store/actions/footballersActions";
 import {Container, Row} from "reactstrap";
 
+
 const PlayersMiddle = (props) => {
     const footballers = useSelector(state => state.allPlayers.allFootballers);
     const dispatch = useDispatch();
@@ -35,5 +36,9 @@ const PlayersMiddle = (props) => {
         </div>
     );
 };
+
+
+
+
 
 export default PlayersMiddle;

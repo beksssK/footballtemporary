@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {Button, Col, Form, FormGroup, Input, InputGroup, Label, Row} from "reactstrap";
 import profilePlaceholder from '../../assets/images/placeholder_male1.jpg';
 import axiosApi from "../../axiosApi";
+import {push} from 'connected-react-router';
+import {useDispatch} from "react-redux";
 
 const initialState = {
     profile_photo: '',
@@ -22,6 +24,7 @@ const initialState = {
 };
 const AddFrom = () => {
     const [placeholder, setPlaceholder] = useState(profilePlaceholder);
+    const dispatch = useDispatch();
     const [playerForm, setPlayerForm] = useState(initialState);
     const onInputChange = event => {
         setPlayerForm({...playerForm, [event.target.name]: event.target.value});
@@ -34,13 +37,12 @@ const AddFrom = () => {
         event.preventDefault();
         const formData = new FormData();
         Object.keys(playerForm).forEach(key => {
-            console.log(key);
-            console.log(playerForm[key]);
             formData.append(key, playerForm[key]);
         });
         try{
             await axiosApi.post('/sportsmen', formData);
-            alert('Player added')
+            alert('Player added');
+            dispatch(push('/'));
         } catch (e) {
             alert("Player not added");
             console.error(e);
@@ -56,21 +58,21 @@ const AddFrom = () => {
                             <Row>
                                 <Col md={4}>
                                     <img src={placeholder} width='100%' height='auto' alt="" />
-                                    <Input onChange={onFileChange} name='profile_photo' className='mt-3' type='file'/>
+                                    <Input onChange={onFileChange} name='profile_photo' required className='mt-3' type='file'/>
                                 </Col>
                                 <Col md={8}>
                                     <InputGroup className='my-3 align-items-center'>
                                         <Label className='mr-3'>Name: </Label>
-                                        <Input type='text' name='name' onChange={onInputChange}/>
+                                        <Input type='text' name='name' required onChange={onInputChange}/>
                                     </InputGroup>
                                     <InputGroup className='my-3 align-items-center'>
                                         <Label className='mr-3'>Surname: </Label>
-                                        <Input type='text' name='surname' onChange={onInputChange}/>
+                                        <Input type='text' name='surname' required onChange={onInputChange}/>
                                     </InputGroup>
                                     <InputGroup className='my-3 align-items-center'>
                                         <Label className='mr-3'>Age: </Label>
                                         <Input type='number' name='age' onChange={onInputChange}/>
-                                        <Label className='mr-3 ml-2'>Height</Label>
+                                        <Label className='mr-3 ml-2' >Height</Label>
                                         <Input type='number' name='height' onChange={onInputChange}/>
                                     </InputGroup>
                                 </Col>
@@ -83,7 +85,7 @@ const AddFrom = () => {
                             </InputGroup>
                             <InputGroup className='my-3 align-items-center'>
                                 <Label className='mr-3'>Date of birth: </Label>
-                                <Input type='date' name='birthday' onChange={onInputChange} />
+                                <Input type='date' required name='birthday' onChange={onInputChange} />
                             </InputGroup>
                             <InputGroup className='my-3 align-items-center'>
                                 <Label className='mr-3'>Citizenship: </Label>
@@ -95,7 +97,7 @@ const AddFrom = () => {
                         <Col md={6}>
                             <InputGroup className='my-3 align-items-center'>
                                 <Label className='mr-3'>Current Club</Label>
-                                <Input type='text' name='current_club' onChange={onInputChange} />
+                                <Input type='text' name='current_club'  onChange={onInputChange} />
                             </InputGroup>
                             <InputGroup className='my-3 align-items-center'>
                                 <Label className='mr-3'>Position</Label>
