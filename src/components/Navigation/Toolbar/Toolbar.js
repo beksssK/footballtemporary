@@ -27,16 +27,16 @@ const Toolbar = () => {
                     </InputGroup>
                     <Nav navbar className='Main-nav col-12 col-md-6'>
                         <NavItem className='mx-2'>
-                            <NavLink exact tag={RouterNav} className='text-light' to='/' >Home</NavLink>
+                            <NavLink onClick={toggle} exact tag={RouterNav} className='text-light' to='/' >Home</NavLink>
                         </NavItem>
                         <NavItem className='mx-2'>
-                            <NavLink exact tag={RouterNav} className='text-light' to='/players' >All Footballers</NavLink>
+                            <NavLink onClick={toggle} exact tag={RouterNav} className='text-light' to='/players' >All Footballers</NavLink>
                         </NavItem>
                         <NavItem className='mx-2'>
-                            <NavLink exact tag={RouterNav} className='text-light' to='/contacts' >Contact us</NavLink>
+                            <NavLink onClick={toggle} exact tag={RouterNav} className='text-light' to='/contacts' >Contact us</NavLink>
                         </NavItem>
                         <NavItem className='mx-2'>
-                            <NavLink exact tag={RouterNav} className='text-light' to='/staff' >Our staff</NavLink>
+                            <NavLink onClick={toggle} exact tag={RouterNav} className='text-light' to='/staff' >Our staff</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
