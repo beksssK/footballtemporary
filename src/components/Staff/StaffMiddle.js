@@ -3,8 +3,8 @@ import gManagerImg from '../../assets/staff/gManager.jpg';
 import secretaryImg from '../../assets/staff/secretary.jpg';
 import organizerImg from '../../assets/staff/organizer.jpg';
 import CEOImg from '../../assets/staff/CEO.jpg';
-import accountantImg from '../../assets/staff/accountantImg.jpg';
-import partnerImg from '../../assets/staff/parnter.jpg';
+import accountantImg from '../../assets/staff/accountantImg2.jpg';
+import partnerImg from '../../assets/staff/partner.jpg';
 
 const STAFF = {
     gManager: {

@@ -65,7 +65,7 @@ const HomeMiddle = () => {
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>Our staff</h2>
-                        <p className='info__text info__text-right'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem, cumque debitis doloribus eaque eius enim eos in ipsam itaque labore laborum magni neque nihil nulla odit officia perspiciatis provident quasi quidem quisquam, tempora temporibus tenetur ut veritatis! Ab culpa ea, iste magni necessitatibus sequi?</p>
+                        <p className='info__text info__text-right'>Our Staffs are very diligent and capable of managing the affairs of the  company.each one of them plays a major role as expected of them in terms of cooperation of our clients and partners.is quite an experience working with our staffs along side our board of directors.</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic staff__pic'>
@@ -137,7 +137,7 @@ const HomeMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <h2 className='info__title'>Our staff</h2>
-                        <p className='info__text info__text-right'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem, cumque debitis doloribus eaque eius enim eos in ipsam itaque labore laborum magni neque nihil nulla odit officia perspiciatis provident quasi quidem quisquam, tempora temporibus tenetur ut veritatis! Ab culpa ea, iste magni necessitatibus sequi?</p>
+                        <p className='info__text info__text-right'>Our Staffs are very diligent and capable of managing the affairs of the  company.each one of them plays a major role as expected of them in terms of cooperation of our clients and partners.is quite an experience working with our staffs along side our board of directors.</p>
                     </div>
                 </section>
             </div>

@@ -11,24 +11,29 @@ import {
 
 const items = [
     {
-        src: require('../../../assets/staff/CEO.jpg'),
+        src: require('../../../assets/staff/CEO2.jpg'),
         altText: 'Our CEO',
-        caption: 'Our CEO'
+        caption: 'our CEO'
     },
     {
         src: require('../../../assets/staff/organizer.jpg'),
         altText: 'Organizer',
-        caption: 'Our Organizer'
+        caption: 'our organizer'
     },
     {
-        src: require('../../../assets/staff/staff-secretary'),
+        src: require('../../../assets/staff/secretary2.jpg'),
         altText: 'Secretary',
-        caption: 'Our Secretary'
+        caption: 'our secretary'
     },
     {
-        src: require('../../../assets/staff/gManager.jpg'),
+        src: require('../../../assets/staff/gManager2.jpg'),
         altText: 'General Manager',
-        caption: 'General Manager'
+        caption: 'general manager'
+    },
+    {
+        src: require('../../../assets/staff/accountantImg2.jpg'),
+        altText: 'Accountant',
+        caption: 'our accountant'
     }
 ];
 

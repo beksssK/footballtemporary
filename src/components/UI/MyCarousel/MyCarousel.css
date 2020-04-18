@@ -6,7 +6,10 @@
     border-radius: 6px;
 }
 .carousel-caption h3{
-    color: #0074F0;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 0;
+    background: rgba(0, 0, 0, 0.6);
 }
 .carousel-caption.d-none{
     display: block !important;
