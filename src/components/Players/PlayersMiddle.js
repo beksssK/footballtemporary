@@ -3,7 +3,7 @@ import './PlayersMiddle.css';
 import SportsmanCard from "../SportsmanCard/SportsmanCard";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchFootballers} from "../../store/actions/footballersActions";
-import {Container, Row} from "reactstrap";
+import {Container, Row, Spinner} from "reactstrap";
 
 
 const PlayersMiddle = (props) => {
@@ -18,20 +18,26 @@ const PlayersMiddle = (props) => {
     return (
         <div className='PlayersMiddle py-5'>
             <Container>
-                <Row className='justify-content-center'>
-                    {footballers.length ? footballers[0].map(footballer => (
-                        <SportsmanCard
-                            onClick={() => goToPlayer(footballer.id)}
-                            key={footballer.id}
-                            image={footballer.profile_photo}
-                            imgType={footballer.type_photo}
-                            name={footballer.name}
-                            surname={footballer.surname}
-                            position={footballer.position}
-                            linkPhoto={footballer.link_photo}
-                        />
-                    )) : null}
-                </Row>
+                {footballers.length ? (
+                    <Row className='justify-content-center'>
+                        {footballers.length ? footballers[0].map(footballer => (
+                            <SportsmanCard
+                                onClick={() => goToPlayer(footballer.id)}
+                                key={footballer.id}
+                                image={footballer.profile_photo}
+                                imgType={footballer.type_photo}
+                                name={footballer.name}
+                                surname={footballer.surname}
+                                position={footballer.position}
+                                linkPhoto={footballer.link_photo}
+                            />
+                        )) : null}
+                    </Row>
+                ) : (
+                    <div className='text-center'>
+                        <Spinner className='Spinner mt-5' color="primary" />
+                    </div>
+                )}
             </Container>
         </div>
     );

@@ -1,5 +1,24 @@
+.Card:hover .SportsmanCard,
+.Card:focus .SportsmanCard {
+    background: #d6d6d6;
+}
+.Spinner {
+    height: 100px;
+    width: 100px;
+}
 .SportsmanCard{
-    margin: 10px 5px;
-    padding-top: 15px;
+    overflow: hidden;
+    width: 100%;
     border-radius: 15px;
+    background: #fff;
+}
+
+.Card-info {
+    padding: 15px 5px 10px;
+}
+
+@media all and (max-width: 576px){
+    .Card {
+        padding: 10px 50px;
+    }
 }

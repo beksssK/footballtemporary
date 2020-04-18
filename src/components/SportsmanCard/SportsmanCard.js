@@ -1,21 +1,18 @@
-import React, {useEffect} from 'react';
-import {Button, Card, CardBody, CardSubtitle, CardTitle} from "reactstrap";
+import React from 'react';
 import './SportsmanCard.css';
 import FootballerThumbnail from "../FootballerThumbnail/FootballerThumbnail";
 
 const SportsmanCard = (props) => {
-    useEffect(() => {
-
-    }, []);
     return (
-        <Card className='SportsmanCard col-md-3' onClick={props.onClick}>
+        <div className='Card col-sm-6 col-md-4 col-lg-3 mb-3'>
+            <div className='SportsmanCard' onClick={props.onClick}>
                 <FootballerThumbnail image={props.image} imgType={props.imgType}/>
-                <CardBody className='text-center'>
-                    <CardTitle>{props.name} {props.surname}</CardTitle>
-                    <CardSubtitle className='mb-4'>{props.position}</CardSubtitle>
-                    <Button className='mt-auto'>Button</Button>
-                </CardBody>
-        </Card>
+                <div className='Card-info'>
+                    <h5 className='text-center'>{props.name} {props.surname}</h5>
+                    <h6 className='text-center text-info'>{props.position}</h6>
+                </div>
+            </div>
+        </div>
     );
 };
 
