@@ -8,10 +8,10 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
-
+let windowWidth = window.matchMedia("(max-width: 600px)");
 const items = [
     {
-        src: require('../../../assets/staff/CEO2.jpg'),
+        src: windowWidth.matches ? require('../../../assets/staff/CEO.jpg') : require('../../../assets/staff/CEO2.jpg'),
         altText: 'Our CEO',
         caption: 'our CEO'
     },
@@ -21,17 +21,17 @@ const items = [
         caption: 'our organizer'
     },
     {
-        src: require('../../../assets/staff/secretary2.jpg'),
+        src: windowWidth.matches ? require('../../../assets/staff/secretary.jpg') : require('../../../assets/staff/secretary2.jpg'),
         altText: 'Secretary',
         caption: 'our secretary'
     },
     {
-        src: require('../../../assets/staff/gManager2.jpg'),
+        src: windowWidth.matches ? require('../../../assets/staff/gManager.jpg') : require('../../../assets/staff/gManager2.jpg'),
         altText: 'General Manager',
         caption: 'general manager'
     },
     {
-        src: require('../../../assets/staff/accountantImg2.jpg'),
+        src: windowWidth.matches ? require('../../../assets/staff/accountantImg.jpg') : require('../../../assets/staff/accountantImg2.jpg'),
         altText: 'Accountant',
         caption: 'our accountant'
     }
