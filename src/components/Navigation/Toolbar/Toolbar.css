@@ -1,10 +1,7 @@
 .Toolbar{
-    position: absolute;
     z-index: 99;
-    top: 0;
-    left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 .Main-nav a{
     position: relative;
