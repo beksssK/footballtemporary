@@ -15,35 +15,99 @@
     }
 }
 
+
 .info__pic {
     background-repeat: no-repeat;
 }
-.ceo__pic{
+.ceo__pic {
     background-position: 50% 19%;
-    background-size: 55%;
+    background-size: 107%;
 }
 
-.gManager__pic{
+.gManager__pic {
     background-position: 50% 50%;
-    background-size: 60%;
+    background-size: 100%;
 }
 
-.organizer__pic{
+.organizer__pic {
     background-position: 50% 30%;
-    background-size: 70%;
+    background-size: 103%;
 }
 
-.secretary__pic{
+.secretary__pic {
     background-position: 50% 30%;
-    background-size: 90%;
+    background-size: 125%;
 }
 
-.accountant__pic{
-    background-position: 50% 8%;
-    background-size: 80%;
+.accountant__pic {
+    background-position: 50% 50%;
+    background-size: 117%;
 }
 
 .partner__pic{
-    background-position: 50% 89%;
-    background-size: 75%;
+    background-position: 66% 50%;
+    background-size: 100%;
 }
+
+.partner__pic {
+    background-size: 110%;
+}
+
+@media all and (max-width: 999px) {
+    .gManager__pic {
+        background-size: 170%;
+    }
+    .ceo__pic {
+        background-size: 180%;
+    }
+    .organizer__pic {
+        background-size: 165%;
+    }
+    .secretary__pic {
+        background-position: 57% 30%;
+        background-size: 186%;
+    }
+    .accountant__pic {
+        background-size: 160%;
+    }
+    .partner__pic {
+        background-size: 170%;
+    }
+}
+@media all and (max-width: 600px) {
+    .gManager__pic {
+        background-size: 113%;
+    }
+    .ceo__pic {
+        background-size: 127%;
+    }
+    .organizer__pic {
+        background-size: 130%;
+    }
+    .accountant__pic {
+        background-size: 130%;
+    }
+    .partner__pic {
+        background-size: 120%;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .gManager__pic {
+        background-size: 157%;
+    }
+    .ceo__pic {
+        background-size: 160%;
+    }
+    .organizer__pic {
+        background-size: 160%;
+    }
+    .accountant__pic {
+        background-size: 180%;
+    }
+    .partner__pic {
+        background-size: 160%;
+        background-position: 66% 50%;
+    }
+}
+

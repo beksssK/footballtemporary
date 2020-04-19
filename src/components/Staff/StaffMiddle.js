@@ -1,10 +1,10 @@
 import React from 'react';
-import gManagerImg from '../../assets/staff/gManager.jpg';
-import secretaryImg from '../../assets/staff/secretary.jpg';
-import organizerImg from '../../assets/staff/organizer.jpg';
-import CEOImg from '../../assets/staff/CEO.jpg';
-import accountantImg from '../../assets/staff/accountantImg2.jpg';
-import partnerImg from '../../assets/staff/partner.jpg';
+import gManagerImg from '../../assets/staff/generalManager1.jpg';
+import secretaryImg from '../../assets/staff/secretary3.jpg';
+import organizerImg from '../../assets/staff/organizer2.jpg';
+import CEOImg from '../../assets/staff/CEO3.jpg';
+import accountantImg from '../../assets/staff/accountant2.jpg';
+import partnerImg from '../../assets/staff/partner2.jpg';
 
 const STAFF = {
     gManager: {
@@ -57,6 +57,7 @@ const StaffMiddle = () => {
                 <section className='info__section who container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.CEO.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.CEO.name}</h4>
                         <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
@@ -66,6 +67,7 @@ const StaffMiddle = () => {
                 <section className='info__section info__what container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.gManager.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.gManager.name}</h4>
                         <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                     <div className='info__item'>
@@ -75,6 +77,7 @@ const StaffMiddle = () => {
                 <section className='info__section info__why container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.organizer.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.organizer.name}</h4>
                         <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
@@ -84,6 +87,7 @@ const StaffMiddle = () => {
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.secretary.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.secretary.name}</h4>
                         <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                     <div className='info__item'>
@@ -93,6 +97,7 @@ const StaffMiddle = () => {
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.accountant.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.accountant.name}</h4>
                         <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
@@ -104,6 +109,7 @@ const StaffMiddle = () => {
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.partner.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.partner.name}</h4>
                         <p className='info__text info__text-left'>{STAFF.partner.info}</p>
                     </div>
                     <div className='info__item'>
@@ -123,6 +129,7 @@ const StaffMiddle = () => {
                 <section className='info__section who container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.CEO.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.CEO.name}</h4>
                         <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
@@ -139,12 +146,14 @@ const StaffMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.gManager.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.gManager.name}</h4>
                         <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                 </section>
                 <section className='info__section info__why container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.organizer.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.organizer.name}</h4>
                         <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
@@ -159,12 +168,14 @@ const StaffMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.secretary.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.secretary.name}</h4>
                         <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.accountant.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.accountant.name}</h4>
                         <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
@@ -181,6 +192,7 @@ const StaffMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.partner.position}</h2>
+                        <h4 className='text-center text-info'>{STAFF.partner.name}</h4>
                         <p className='info__text info__text-right'>{STAFF.partner.info}</p>
                     </div>
                 </section>
