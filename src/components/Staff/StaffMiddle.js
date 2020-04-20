@@ -27,8 +27,8 @@ const STAFF = {
     },
     CEO: {
         position: 'CEO',
-        name: 'Allen Mixon',
-        info: 'Our CEO Mr Hazo OTU.  he is responsible for making major corporate decisions, managing the overall operations and resources of the company, acting as the main point of communication between the board of directors.',
+        name: 'Hazo Otu',
+        info: 'Our CEO Mr Hazo Otu.  he is responsible for making major corporate decisions, managing the overall operations and resources of the company, acting as the main point of communication between the board of directors.',
         photo: CEOImg
     },
     accountant: {
@@ -40,7 +40,7 @@ const STAFF = {
     partner: {
         position: 'Partner',
         name: 'Josip Zbiljski',
-        info: 'He is our chiefs-scout and partner Josip Zbilijski assets our player before placement on to get various clubs ',
+        info: 'He is our chief scout and one of the companies  partner. Josip Zbilijski our football players mostly before placement to soccer clubs when requested.',
         photo: partnerImg
     }
 
