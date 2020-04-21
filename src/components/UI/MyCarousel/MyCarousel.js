@@ -11,7 +11,7 @@ import {
 let windowWidth = window.matchMedia("(max-width: 600px)");
 const items = [
     {
-        src: windowWidth.matches ? require('../../../assets/staff/CEO.jpg') : require('../../../assets/staff/CEO2.jpg'),
+        src: windowWidth.matches ? require('../../../assets/staff/CEO11.jpg') : require('../../../assets/staff/CEO11.jpg') ,
         altText: 'Our CEO',
         caption: 'our CEO'
     },

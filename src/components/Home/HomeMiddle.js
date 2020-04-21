@@ -1,8 +1,6 @@
 import React from 'react';
 import './HomeMiddle.css';
 import MyCarousel from "../UI/MyCarousel/MyCarousel";
-import whyUs from '../../assets/video/why-us.mp4';
-import whyUsPoster from '../../assets/images/managers-why.jpg';
 
 const HomeMiddle = () => {
     console.log('check');

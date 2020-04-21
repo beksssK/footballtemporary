@@ -1,8 +1,20 @@
 .ContactTop{
-    background: url("../../assets/images/contacts-bg.jpg") 50% 44% no-repeat;
+    background: url("../../assets/images/bg5.jpg") 50% 0 no-repeat;
     background-size: cover;
-    height: 350px;
 }
-.ContactTop_header{
-    padding-top: 250px !important;
+
+.Contact-top__header {
+    width: 270px;
 }
+
+.Contact-top__title {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0 5px;
+}
+
+@media all and (max-width: 1000px){
+    .ContactTop {
+        background-size: contain;
+    }
+}
+

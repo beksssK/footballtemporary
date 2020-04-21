@@ -50,11 +50,11 @@ const StaffMiddle = () => {
     let windowWidth = window.matchMedia("(max-width: 600px)");
     if(windowWidth.matches){
         return (
-            <div className='HomeMiddle'>
+            <div className='StaffMiddle'>
                 <section className='info__header container'>
                     <h2 className='info__main-title'>Our lovely staff members</h2>
                 </section>
-                <section className='info__section who container'>
+                <section className='info__section info__section_staff who container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.CEO.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.CEO.position}</h4>
@@ -64,7 +64,7 @@ const StaffMiddle = () => {
                         <div className='info__pic ceo__pic' style={{backgroundImage: `url(${STAFF.CEO.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__what container'>
+                <section className='info__section info__section_staff info__what container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.gManager.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.gManager.position}</h4>
@@ -74,7 +74,7 @@ const StaffMiddle = () => {
                         <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__why container'>
+                <section className='info__section info__section_staff info__why container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.organizer.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.organizer.position}</h4>
@@ -84,7 +84,7 @@ const StaffMiddle = () => {
                         <div className='info__pic organizer__pic' style={{backgroundImage: `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__staff container'>
+                <section className='info__section info__section_staff info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.secretary.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.secretary.position}</h4>
@@ -94,7 +94,7 @@ const StaffMiddle = () => {
                         <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__staff container'>
+                <section className='info__section info__section_staff info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.accountant.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.accountant.position}</h4>
@@ -106,7 +106,7 @@ const StaffMiddle = () => {
                         </div>
                     </div>
                 </section>
-                <section className='info__section info__staff container'>
+                <section className='info__section info__section_staff info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.partner.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.partner.position}</h4>
@@ -126,7 +126,7 @@ const StaffMiddle = () => {
                 <section className='info__header container'>
                     <h2 className='info__main-title'>Our lovely staff members</h2>
                 </section>
-                <section className='info__section who container'>
+                <section className='info__section info__section_staff who container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.CEO.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.CEO.position}</h4>
@@ -138,7 +138,7 @@ const StaffMiddle = () => {
                         </div>
                     </div>
                 </section>
-                <section className='info__section info__what container'>
+                <section className='info__section info__section_staff info__what container'>
                     <div className='info__item'>
                         <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}>
 
@@ -150,7 +150,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                 </section>
-                <section className='info__section info__why container'>
+                <section className='info__section info__section_staff info__why container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.organizer.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.organizer.position}</h4>
@@ -160,7 +160,7 @@ const StaffMiddle = () => {
                         <div className='info__pic organizer__pic' style={{backgroundImage: `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__staff container'>
+                <section className='info__section info__section_staff info__staff container'>
                     <div className='info__item'>
                         <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}>
 
@@ -172,7 +172,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                 </section>
-                <section className='info__section info__staff container'>
+                <section className='info__section info__section_staff info__staff container'>
                     <div className='info__item'>
                         <h2 className='info__title'>{STAFF.accountant.name}</h2>
                         <h4 className='text-center text-info'>{STAFF.accountant.position}</h4>
@@ -184,7 +184,7 @@ const StaffMiddle = () => {
                         </div>
                     </div>
                 </section>
-                <section className='info__section info__staff container'>
+                <section className='info__section info__section_staff info__staff container'>
                     <div className='info__item'>
                         <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}>
 
