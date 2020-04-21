@@ -1,7 +1,11 @@
 .Layout{
-    background-size: cover;
     min-height: 100vh; /* todo: temp */
 }
+
+.MainLayout {
+    background: radial-gradient(circle, rgba(238,237,237,1) 0%, rgba(199,199,235,1) 100%);
+}
+
 .page-top__header {
     padding-top: 200px;
     margin: 0 auto 0 60%;
