@@ -38,18 +38,18 @@
 }
 
 .who__pic{
-    background: url("../../assets/staff/who-are-we.jpg") 50% 32% no-repeat;
+    background: url("../../assets/images/who-bg.jpg") 50% 32% no-repeat;
     background-size: cover;
 }
 
 .what__pic{
-    background: url("../../assets/staff/what-do-we-do.jpg") 50% 36% no-repeat;
+    background: url("../../assets/images/what-do-we.jpg") 50% 9% no-repeat;
     background-size: cover;
 }
 
 .why__pic{
-    /*background: url("../../assets/images/managers-why.jpg") 50% 50% no-repeat;*/
-    /*background-size: cover;*/
+    background: url("../../assets/images/managers.jpg") 50% 50% no-repeat;
+    background-size: cover;
 }
 
 .staff__pic{
@@ -78,6 +78,16 @@
 
     .info__text-right{
         padding: 10px 0 5px 33px;
+    }
+    .what__pic {
+        background-position: 50% 50%;
+        background-size: 177%;
+    }
+    .staff__pic {
+        width: 368px;
+    }
+    .info__staff_item {
+        width: 100%;
     }
 }
 
@@ -116,6 +126,10 @@
     }
     .info__item{
         width: 100%;
+    }
+    .what__pic {
+        background-position: 50% 22%;
+        background-size: 150%;
     }
 }
 

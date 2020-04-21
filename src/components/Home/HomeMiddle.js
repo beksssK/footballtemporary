@@ -12,7 +12,7 @@ const HomeMiddle = () => {
         return (
             <div className='HomeMiddle'>
                 <section className='info__header container'>
-                    <h2 className='info__main-title'>HNBM SPORTS AGENCY AND COMPANY LTD</h2>
+                    <h2 className='info__main-title'>HNBM SPORTS MANAGEMENT AND COMPANY LTD</h2>
                 </section>
                 <section className='info__section who container'>
                     <div className='info__item'>
@@ -55,10 +55,7 @@ const HomeMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <div className='info__pic why__pic'>
-                            <video width="270" autoPlay loop height="250" poster={whyUsPoster}>
-                                <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
 
-                            </video>
                         </div>
                     </div>
                 </section>
@@ -79,7 +76,7 @@ const HomeMiddle = () => {
         return (
             <div className='HomeMiddle'>
                 <section className='info__header container'>
-                    <h2 className='info__main-title'>HNBM SPORTS AGENCY AND COMPANY LTD</h2>
+                    <h2 className='info__main-title'>HNBM SPORTS MANAGEMENT AND COMPANY LTD</h2>
                 </section>
                 <section className='info__section who container'>
                     <div className='info__item'>
@@ -122,15 +119,12 @@ const HomeMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <div className='info__pic why__pic'>
-                            <video width="270" autoPlay loop height="250" poster={whyUsPoster}>
-                                <source src={whyUs} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
 
-                            </video>
                         </div>
                     </div>
                 </section>
                 <section className='info__section info__staff container'>
-                    <div className='info__item'>
+                    <div className='info__item info__staff_item'>
                         <div className='info__pic staff__pic'>
                             <MyCarousel/>
                         </div>

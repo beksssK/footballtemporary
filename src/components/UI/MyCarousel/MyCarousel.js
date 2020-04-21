@@ -26,7 +26,7 @@ const items = [
         caption: 'our secretary'
     },
     {
-        src: windowWidth.matches ? require('../../../assets/staff/gManager.jpg') : require('../../../assets/staff/gManager2.jpg'),
+        src: windowWidth.matches ? require('../../../assets/staff/gManager2.jpg') : require('../../../assets/staff/gManager.jpg'),
         altText: 'General Manager',
         caption: 'general manager'
     },
