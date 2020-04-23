@@ -57,11 +57,12 @@
 
 .partner__pic{
     background-position: 66% 50%;
-    background-size: 100%;
+    background-size: 110%;
 }
 
-.partner__pic {
-    background-size: 110%;
+.webdev__pic {
+    background-position: 50% 48%;
+    background-size: 91%;
 }
 
 @media all and (max-width: 999px) {
