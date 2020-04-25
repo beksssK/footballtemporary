@@ -20,3 +20,11 @@
 .Main-nav a:hover:after{
     opacity: 1;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 15px;
+}
+
+.navbar-nav {
+    padding-left: 10px;
+}

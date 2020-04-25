@@ -22,10 +22,10 @@ const Toolbar = () => {
                 <NavbarBrand exact tag={RouterNav} to='/' ><img width='50' height='auto' src={logo} alt="main logo"/></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <InputGroup className='col-12 col-md-6 my-3 p-0'>
+                    <InputGroup className='col-12 col-md-4 my-3 p-0'>
                         <Input type='text' placeholder="Search the player" className=''/>
                     </InputGroup>
-                    <Nav navbar className='Main-nav col-12 col-md-6'>
+                    <Nav navbar className='Main-nav col-12 col-md-8'>
                         <NavItem className='mx-2'>
                             <NavLink onClick={toggle} exact tag={RouterNav} className='text-light' to='/' >Home</NavLink>
                         </NavItem>
