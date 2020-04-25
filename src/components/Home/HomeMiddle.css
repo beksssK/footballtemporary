@@ -31,8 +31,12 @@
     height: 250px;
     margin: 0 auto;
     box-shadow: 5px 6px 8px 0 rgba(0,0,0,0.75);
+    transition: transform .2s;
 }
 
+.info__pic:hover {
+    transform: scale(1.06);
+}
 
 .info__item{
     width: 50%;
