@@ -1,22 +1,29 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import {Button, Col, Container, Form, Input, InputGroup, Row} from "reactstrap";
+import {Alert, Button, Col, Container, Form, Input, InputGroup, Row} from "reactstrap";
 
 const ContactBottom = () => {
     const [contactForm, setContactForm] = useState({name: '', phoneNum: '', text: ''});
+    const [formSuccess, setFormSuccess] = useState(false);
+    const [submitButton, toggleSubmitButton] = useState(false);
+    const [formError, setFormError] = useState(false);
     const sendForm = async (e) => {
         e.preventDefault();
+        toggleSubmitButton(true);
         let chatId = '-1001430778340';
         let token = '840636313:AAGVBmkU9pPWOhVtuTnesKlz4hE3P4u4K_Q';
-        let text = `<b>Name:</b> ${contactForm.name} %0A<b>Phone Number:</b> ${contactForm.phoneNum} %0A<b>Text:</b> ${contactForm.text}`;
+        let text = `<b>Name:</b> ${contactForm.name} %0A<b>Number:</b> ${contactForm.phoneNum} %0A<b>Text:</b> ${contactForm.text}`;
         try {
-            const checking = await axios.get(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${text}`);
-            console.log(checking.data);
+            await axios.get(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${text.replace(/\n/g, '%0A')}`);
             setContactForm({name: '', phoneNum: '', text: ''});
-            alert('Your message was successfully sent');
+            setFormError(false);
+            setFormSuccess(true);
+            toggleSubmitButton(false);
         } catch (e) {
             console.error(e);
-            alert('Message wasn\'t sent');
+            setFormSuccess(false);
+            setFormError(true);
+            toggleSubmitButton(false);
         }
     };
 
@@ -27,6 +34,8 @@ const ContactBottom = () => {
 
     return (
         <Container className='pb-4'>
+            <Alert color='success' isOpen={formSuccess} toggle={() => setFormSuccess(false)}>Thank you for your request, we will get back soon!!!</Alert>
+            <Alert color='danger' isOpen={formError} toggle={() => setFormError(false)}>Sorry, something went wrong (</Alert>
             <div className='ContactBlock'>
                 <div className='ContactBlock-left'>
                     <h3>Contact us</h3>
@@ -75,7 +84,7 @@ const ContactBottom = () => {
                             <InputGroup>
                                 <Input type="textarea" name="text" required={true} onChange={onInputChange} id="text" value={contactForm.text} placeholder='Your message' />
                             </InputGroup>
-                            <Button color='primary' type='submit' className='mt-3 px-4'>Send</Button>
+                            <Button color='primary' disabled={submitButton} type='submit' className='mt-3 px-4'>Send</Button>
                         </Form>
                     </div>
                 </div>
