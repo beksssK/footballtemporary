@@ -28,3 +28,17 @@
 .navbar-nav {
     padding-left: 10px;
 }
+
+
+
+@media all and (max-width: 768px) {
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .Search-bar {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+

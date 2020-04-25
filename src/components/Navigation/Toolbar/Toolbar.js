@@ -22,7 +22,7 @@ const Toolbar = () => {
                 <NavbarBrand exact tag={RouterNav} to='/' ><img width='50' height='auto' src={logo} alt="main logo"/></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <InputGroup className='col-12 col-md-4 my-3 p-0'>
+                    <InputGroup className='col-12 col-md-4 my-3 p-0 Search-bar'>
                         <Input type='text' placeholder="Search the player" className=''/>
                     </InputGroup>
                     <Nav navbar className='Main-nav col-12 col-md-8'>
