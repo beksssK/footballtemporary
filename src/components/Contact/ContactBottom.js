@@ -45,7 +45,7 @@ const ContactBottom = () => {
                                 <i className="fas fa-map-marker-alt"/>
                             </div>
                             <div className='ContactBlock__card_text'>
-                                <h5>Address</h5>
+                                <h5 className='text-info'>Address</h5>
                                 <p>Jaiyl Baatyra 77.68 Bishkek Kyrgyzstan</p>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ const ContactBottom = () => {
                                 <i className="fas fa-mobile-alt"/>
                             </div>
                             <div className='ContactBlock__card_text'>
-                                <h5>Phone</h5>
+                                <h5 className='text-info'>Phone</h5>
                                 <p>+996 709 44 09 61</p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const ContactBottom = () => {
                                 <i className="far fa-envelope"/>
                             </div>
                             <div className='ContactBlock__card_text'>
-                                <h5>Mail</h5>
+                                <h5 className='text-info'>Mail</h5>
                                 <p>hazootu@gmail.com</p>
                             </div>
                         </div>

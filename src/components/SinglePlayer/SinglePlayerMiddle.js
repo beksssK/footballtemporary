@@ -29,12 +29,12 @@ const SinglePlayerMiddle = (props) => {
                     <Row>
                         <Col md={6}>
                             <Row>
-                                <Col md={5}>
+                                <Col sm={6} md={5}>
                                     <img
                                         src={singleFootballer ? `data:${singleFootballer.type_photo};base64, ${singleFootballer.profile_photo}` : placeHolder}
                                         width='100%' height='auto' alt=""/>
                                 </Col>
-                                <Col md={7}>
+                                <Col sm={6} md={7}>
                                     <p className='my-3'><b>Name:</b> {singleFootballer && singleFootballer.name}</p>
                                     <p className='my-3'><b>Surname:</b> {singleFootballer && singleFootballer.surname}</p>
                                     <p className='my-3'><b>Age:</b> {singleFootballer && singleFootballer.age} <b

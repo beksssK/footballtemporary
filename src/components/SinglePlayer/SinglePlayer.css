@@ -7,3 +7,7 @@
     min-height: 300px;
     font-size: 20px;
 }
+
+.SinglePlayerMiddle img {
+    border-radius: 8px;
+}
