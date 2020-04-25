@@ -3,7 +3,8 @@
 }
 
 .MainLayout {
-    background: radial-gradient(circle, rgba(238,237,237,1) 0%, rgba(199,199,235,1) 100%);
+    background: #424242;
+    color: #fff;
 }
 
 .page-top__header {

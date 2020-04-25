@@ -6,10 +6,23 @@
 .Spinner {
     height: 100px;
     width: 100px;
+
 }
-.SportsmanCard{
+
+.Card-info {
+    position: absolute;
+    bottom: 8px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.SportsmanCard {
     overflow: hidden;
     width: 100%;
+    height: 100%;
     border-radius: 15px;
     background: #fff;
     -webkit-box-shadow: 2px 5px 8px 0 rgba(0,0,0,0.75);
@@ -24,5 +37,8 @@
 @media all and (max-width: 576px){
     .Card {
         padding: 10px 50px;
+    }
+    .SportsmanCard > img{
+        height: auto !important;
     }
 }

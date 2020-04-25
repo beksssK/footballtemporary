@@ -8,15 +8,15 @@ const MainFooter = () => {
             <Container>
                 <Row className='FooterInfo text-center'>
                    <Col md='4'>
-                       <p className='text-primary FooterInfo_title mb-1'>Phone</p>
+                       <p className='text-info FooterInfo_title mb-1'>Phone</p>
                        <p>+996 709 44 09 61</p>
                    </Col>
                     <Col md='4'>
-                        <p className='text-primary FooterInfo_title mb-1'>Address</p>
+                        <p className='text-info FooterInfo_title mb-1'>Address</p>
                         <p>Jaiyl Baatyra 77.68 Bishkek Kyrgyzstan</p>
                     </Col>
                     <Col md='4'>
-                        <p className='text-primary FooterInfo_title mb-1'>Email</p>
+                        <p className='text-info FooterInfo_title mb-1'>Email</p>
                         <p>hazootu@gmail.com</p>
                     </Col>
                 </Row>

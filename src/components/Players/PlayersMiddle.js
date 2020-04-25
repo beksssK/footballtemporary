@@ -35,7 +35,7 @@ const PlayersMiddle = (props) => {
                     </Row>
                 ) : (
                     <div className='text-center'>
-                        <Spinner className='Spinner mt-5' color="primary" />
+                        <Spinner className='Spinner mt-5' color="info" />
                     </div>
                 )}
             </Container>

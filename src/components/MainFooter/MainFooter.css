@@ -26,11 +26,11 @@
 
 .social .fab{
     font-size: 18px;
-    color: #0074F0;
+    color: #17a2b8;
 }
 
 .social:hover{
-    background: #0074F0;
+    background: #17a2b8;
 }
 .social:hover .fab{
     color: #fff;
