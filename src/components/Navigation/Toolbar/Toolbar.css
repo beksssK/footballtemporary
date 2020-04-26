@@ -3,6 +3,11 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
 }
+
+.Main-nav {
+    justify-content: flex-end;
+}
+
 .Main-nav a{
     position: relative;
 }
