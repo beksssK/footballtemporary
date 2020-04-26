@@ -3,8 +3,21 @@
 }
 
 .MainLayout {
-    background: #424242;
     color: #fff;
+    position: relative;
+    background: url("../../assets/images/main-bg.jpg");
+    z-index: 2;
+}
+
+.MainLayout:before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .page-top__header {

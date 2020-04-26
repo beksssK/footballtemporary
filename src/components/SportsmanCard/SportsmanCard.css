@@ -1,7 +1,6 @@
 .Card:hover .SportsmanCard,
 .Card:focus .SportsmanCard {
     box-shadow: none;
-    transform: translate(1px, 2px);
 }
 .Spinner {
     height: 100px;
@@ -29,6 +28,18 @@
     -moz-box-shadow: 2px 5px 8px 0 rgba(0,0,0,0.75);
     box-shadow: 2px 5px 8px 0 rgba(0,0,0,0.75);
 }
+
+.SportsmanCard img {
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.Card:hover .SportsmanCard img {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+
 
 .Card-info {
     padding: 15px 5px 10px;
@@ -64,3 +75,4 @@
         font-size: 16px;
     }
 }
+
