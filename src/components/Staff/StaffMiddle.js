@@ -47,7 +47,7 @@ const STAFF = {
     webDev: {
         position: 'Web Developer',
         name: 'Beks Kadyrbekov',
-        info: 'Beks is our web developer who supports and maintains the IT part of our department.',
+        info: 'Beks is our IT engineer. He supports and maintains computer systems. He is responsible for the company data and manages our official website.',
         photo: webDevImg
     },
     lawyer: {
