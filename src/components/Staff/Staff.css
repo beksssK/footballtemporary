@@ -8,7 +8,7 @@
 }
 
 
-.info__section_staff {
+.staff__info__section {
     border-bottom: 1px solid #6e6d6d;
     padding-bottom: 62px;
     margin-bottom: 50px;
@@ -65,7 +65,17 @@
     background-size: 91%;
 }
 
+.lawyer__pic {
+    background-position: 50% 4%;
+    background-size: 170%;
+}
 @media all and (max-width: 999px) {
+    .staff__title {
+        font-size: 27px;
+    }
+    .staff__position {
+        font-size: 25px;
+    }
     .gManager__pic {
         background-size: 170%;
     }
@@ -85,6 +95,9 @@
     .partner__pic {
         background-size: 170%;
     }
+    .lawyer__info__item {
+        width: 60%;
+    }
 }
 @media all and (max-width: 600px) {
     .gManager__pic {
@@ -102,7 +115,7 @@
     .partner__pic {
         background-size: 120%;
     }
-    .info__section_staff {
+    .staff__info__section {
         padding-bottom: 40px;
         margin-bottom: 40px;
     }

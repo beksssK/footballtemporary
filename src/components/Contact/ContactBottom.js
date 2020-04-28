@@ -84,7 +84,7 @@ const ContactBottom = () => {
                             <InputGroup>
                                 <Input type="textarea" name="text" required={true} onChange={onInputChange} id="text" value={contactForm.text} placeholder='Your message' />
                             </InputGroup>
-                            <Button color='primary' disabled={submitButton} type='submit' className='mt-3 px-4'>Send</Button>
+                            <Button color='info' disabled={submitButton} type='submit' className='mt-3 px-4'>Send</Button>
                         </Form>
                     </div>
                 </div>

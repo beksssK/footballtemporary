@@ -6,7 +6,7 @@ import CEOImg from '../../assets/staff/CEO3.jpg';
 import accountantImg from '../../assets/staff/accountant2.jpg';
 import partnerImg from '../../assets/staff/partner2.jpg';
 import webDevImg from '../../assets/staff/webDev.jpg';
-
+import lawyerImg from '../../assets/staff/lawyer.jpg'
 const STAFF = {
     gManager: {
         position: 'General Manager / Adviser',
@@ -49,6 +49,12 @@ const STAFF = {
         name: 'Beks Kadyrbekov',
         info: 'Beks is our web developer who supports and maintains the IT part of our department.',
         photo: webDevImg
+    },
+    lawyer: {
+        position: 'Lawyer',
+        name: 'Nurlan Kursanbekov',
+        info: 'Our legal adviser and company lawyer',
+        photo: lawyerImg
     }
 
 };
@@ -61,50 +67,50 @@ const StaffMiddle = () => {
                 <section className='info__header container'>
                     <h2 className='info__main-title'>Our lovely staff members</h2>
                 </section>
-                <section className='info__section info__section_staff who container'>
+                <section className='info__section staff__info__section who container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.CEO.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.CEO.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.CEO.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.CEO.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic ceo__pic' style={{backgroundImage: `url(${STAFF.CEO.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__what container'>
+                <section className='info__section staff__info__section info__what container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.gManager.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.gManager.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.gManager.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.gManager.position}</h4>
                         <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__why container'>
+                <section className='info__section staff__info__section info__why container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.organizer.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.organizer.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.organizer.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.organizer.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic organizer__pic' style={{backgroundImage: `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.secretary.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.secretary.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.secretary.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.secretary.position}</h4>
                         <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.accountant.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.accountant.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.accountant.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.accountant.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
@@ -113,10 +119,10 @@ const StaffMiddle = () => {
                         </div>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.partner.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.partner.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.partner.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.partner.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.partner.info}</p>
                     </div>
                     <div className='info__item'>
@@ -125,14 +131,26 @@ const StaffMiddle = () => {
                         </div>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.webDev.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.webDev.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.webDev.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.webDev.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.webDev.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic webdev__pic' style={{backgroundImage: `url(${STAFF.webDev.photo})`}}>
+
+                        </div>
+                    </div>
+                </section>
+                <section className='info__section staff__info__section info__staff container'>
+                    <div className='info__item'>
+                        <h2 className='info__title staff__title'>{STAFF.lawyer.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.lawyer.position}</h4>
+                        <p className='info__text info__text-left'>{STAFF.lawyer.info}</p>
+                    </div>
+                    <div className='info__item'>
+                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}>
 
                         </div>
                     </div>
@@ -145,10 +163,10 @@ const StaffMiddle = () => {
                 <section className='info__header container'>
                     <h2 className='info__main-title'>Our lovely staff members</h2>
                 </section>
-                <section className='info__section info__section_staff who container'>
+                <section className='info__section staff__info__section who container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.CEO.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.CEO.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.CEO.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.CEO.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
@@ -157,44 +175,44 @@ const StaffMiddle = () => {
                         </div>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__what container'>
+                <section className='info__section staff__info__section info__what container'>
                     <div className='info__item'>
                         <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}>
 
                         </div>
                     </div>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.gManager.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.gManager.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.gManager.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.gManager.position}</h4>
                         <p className='info__text info__text-right'>{STAFF.gManager.info}</p>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__why container'>
+                <section className='info__section staff__info__section info__why container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.organizer.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.organizer.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.organizer.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.organizer.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.organizer.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic organizer__pic' style={{backgroundImage: `url(${STAFF.organizer.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
                         <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}>
 
                         </div>
                     </div>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.secretary.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.secretary.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.secretary.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.secretary.position}</h4>
                         <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.accountant.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.accountant.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.accountant.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.accountant.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
                     </div>
                     <div className='info__item'>
@@ -203,28 +221,40 @@ const StaffMiddle = () => {
                         </div>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
                         <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}>
 
                         </div>
                     </div>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.partner.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.partner.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.partner.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.partner.position}</h4>
                         <p className='info__text info__text-right'>{STAFF.partner.info}</p>
                     </div>
                 </section>
-                <section className='info__section info__section_staff info__staff container'>
+                <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title'>{STAFF.webDev.name}</h2>
-                        <h4 className='text-center text-info'>{STAFF.webDev.position}</h4>
+                        <h2 className='info__title staff__title'>{STAFF.webDev.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.webDev.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.webDev.info}</p>
                     </div>
                     <div className='info__item'>
                         <div className='info__pic webdev__pic' style={{backgroundImage: `url(${STAFF.webDev.photo})`}}>
 
                         </div>
+                    </div>
+                </section>
+                <section className='info__section staff__info__section info__staff container'>
+                    <div className='info__item'>
+                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}>
+
+                        </div>
+                    </div>
+                    <div className='info__item'>
+                        <h2 className='info__title staff__title'>{STAFF.lawyer.name}</h2>
+                        <h4 className='text-center text-info staff__position'>{STAFF.lawyer.position}</h4>
+                        <p className='info__text info__text-right'>{STAFF.lawyer.info}</p>
                     </div>
                 </section>
             </div>
