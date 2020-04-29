@@ -22,7 +22,7 @@ const MainFooter = () => {
                 </Row>
                 <Row>
                     <Col md='4'>
-                        <p className='copyright text-center'>Copyright &copy; 2020 All rights reserved</p>
+                        <p className='copyright text-center'>&copy; HNBM sports management 2020 All rights reserved</p>
                     </Col>
                     <Col md='4'/>
                     <Col md='4' className='text-center'>

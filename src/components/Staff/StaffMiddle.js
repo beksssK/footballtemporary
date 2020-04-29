@@ -41,7 +41,7 @@ const STAFF = {
     partner: {
         position: 'Partner',
         name: 'Josip Zbiljski',
-        info: 'He is our chief scout and one of the company\'s partner. he also plays a special role in our transfer sector.',
+        info: 'My Josip is one of our company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
         photo: partnerImg
     },
     webDev: {
@@ -51,9 +51,9 @@ const STAFF = {
         photo: webDevImg
     },
     lawyer: {
-        position: 'Lawyer',
+        position: 'Legal adviser & corporate lawyer',
         name: 'Nurlan Kursanbekov',
-        info: 'Our legal adviser and company lawyer',
+        info: 'Nurlan Kursanbekov is the company\'s lawyer and legal adviser.he is responsible for effective support of international and local transactions. He has repeatedly received corporate awards for professional and effective protection of company\'s  interests.Then he had worked as an expert in the international project of the American Bar association (ABA Rolly) "Improvement of the national legislation of the Kyrgyz Republic in the Field of telecommunications and communications. He is also engaged in scientific research of taxation and financial law.',
         photo: lawyerImg
     }
 

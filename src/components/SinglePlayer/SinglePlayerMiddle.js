@@ -22,6 +22,10 @@ const SinglePlayerMiddle = (props) => {
             console.log(e);
         }
     };
+    const returnSocial = (social) => {
+        return <p className='my-3'><b>{social} </b> {singleFootballer && singleFootballer.social}</p>
+    };
+    let temp = 'hello';
     if (singleFootballer && singleFootballer.id === parseInt(props.params.id)){
         return (
             <div className='SinglePlayerMiddle py-5'>
@@ -73,6 +77,9 @@ const SinglePlayerMiddle = (props) => {
                     </Row>
                     {user && user.role === 'admin' && (<Button onClick={deleteFootballer} color='danger'>Delete</Button>)}
 
+                    <Row>
+
+                    </Row>
                 </Container>
             </div>
         )
