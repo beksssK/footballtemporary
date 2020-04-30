@@ -9,7 +9,7 @@ import webDevImg from '../../assets/staff/webDev.jpg';
 import lawyerImg from '../../assets/staff/lawyer.jpg'
 const STAFF = {
     gManager: {
-        position: 'General Manager / Adviser',
+        position: 'General Manager',
         name: 'Nurudeen Kasim',
         info: 'Our general manger/adviser. Mr Nurudeen Kasim manages the external and internal affairs of the company.He also plays another role as the company\'s adviser. He manages the affairs of the company,he is a member of the board of directors as well',
         photo: gManagerImg
@@ -41,7 +41,7 @@ const STAFF = {
     partner: {
         position: 'Partner',
         name: 'Josip Zbiljski',
-        info: 'My Josip is one of our company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
+        info: 'Mr. Josip is one of the company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
         photo: partnerImg
     },
     webDev: {
