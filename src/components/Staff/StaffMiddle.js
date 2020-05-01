@@ -11,7 +11,7 @@ const STAFF = {
     gManager: {
         position: 'General Manager',
         name: 'Nurudeen Kasim',
-        info: 'Our general manger/adviser. Mr Nurudeen Kasim manages the external and internal affairs of the company.He also plays another role as the company\'s adviser. He manages the affairs of the company,he is a member of the board of directors as well',
+        info: 'Our general manger Mr Nurudeen Kasim manages the external and internal affairs of the company.He also plays another role as the company\'s adviser. He manages the affairs of the company,he is a member of the board of directors as well',
         photo: gManagerImg
     },
     secretary: {
