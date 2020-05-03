@@ -1,6 +1,7 @@
 import React from 'react';
 
 import imageNotAvailable from '../../assets/images/image-not-available.jpg';
+import {apiURL} from "../../constants";
 
 const styles = {
     width: '100%',
@@ -11,8 +12,8 @@ const styles = {
 const FootballerThumbnail = props => {
     let image = imageNotAvailable;
 
-    if(props.image && props.imgType){
-        image = `data:${props.imgType};base64, ${props.image}`;
+    if(props.image){
+        image = apiURL + '/uploads/' + props.image;
     }
     return <img alt="product" src={image} style={styles} />;
 };

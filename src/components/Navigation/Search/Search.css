@@ -1,0 +1,22 @@
+.Search-bar {
+    position: relative;
+}
+.Search-bar__dropdown {
+    top: 110%;
+    background: #fff;
+    border-radius: 3px;
+    list-style: none;
+    width: 100%;
+    padding: 5px 10px;
+    z-index: 100;
+    left: 0;
+}
+
+.Search-bar__item {
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 2% 2px 0;
+    height: 45px;
+}

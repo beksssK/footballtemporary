@@ -3,9 +3,34 @@ import './HomeMiddle.css';
 import MyCarousel from "../UI/MyCarousel/MyCarousel";
 
 const HomeMiddle = () => {
-    console.log('check');
-
     let windowWidth = window.matchMedia("(max-width: 600px)");
+    const items = [
+        {
+            src: windowWidth.matches ? require('../../assets/staff/CEO11.jpg') : require('../../assets/staff/CEO11.jpg') ,
+            altText: 'Our CEO',
+            caption: 'our CEO'
+        },
+        {
+            src: require('../../assets/staff/organizer.jpg'),
+            altText: 'Organizer',
+            caption: 'our organizer'
+        },
+        {
+            src: windowWidth.matches ? require('../../assets/staff/secretary.jpg') : require('../../assets/staff/secretary2.jpg'),
+            altText: 'Secretary',
+            caption: 'our secretary'
+        },
+        {
+            src: windowWidth.matches ? require('../../assets/staff/gManager2.jpg') : require('../../assets/staff/gManager.jpg'),
+            altText: 'General Manager',
+            caption: 'general manager'
+        },
+        {
+            src: windowWidth.matches ? require('../../assets/staff/accountantImg.jpg') : require('../../assets/staff/accountantImg2.jpg'),
+            altText: 'Accountant',
+            caption: 'our accountant'
+        }
+    ];
     if(windowWidth.matches){
         return (
             <div className='HomeMiddle'>
@@ -64,7 +89,7 @@ const HomeMiddle = () => {
                     </div>
                     <div className='info__item'>
                         <div className='info__pic staff__pic'>
-                            <MyCarousel/>
+                            <MyCarousel items={items}/>
                         </div>
                     </div>
                 </section>
@@ -124,7 +149,7 @@ const HomeMiddle = () => {
                 <section className='info__section info__staff container'>
                     <div className='info__item info__staff_item'>
                         <div className='info__pic staff__pic'>
-                            <MyCarousel/>
+                            <MyCarousel items={items}/>
                         </div>
                     </div>
                     <div className='info__item'>

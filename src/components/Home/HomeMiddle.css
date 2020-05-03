@@ -5,6 +5,28 @@
 .info__header{
 
 }
+/*carousel*/
+.HomeMiddle .carousel-item > img {
+    width: 100%;
+    height: 400px;
+}
+.HomeMiddle .carousel-inner{
+    border-radius: 6px;
+}
+.HomeMiddle .carousel-caption h3{
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.HomeMiddle .carousel-caption.d-none{
+    display: block !important;
+}
+.HomeMiddle .carousel-caption p{
+    display: none;
+}
+
+/*carousel end*/
 
 .info__main-title{
     padding-bottom: 30px;

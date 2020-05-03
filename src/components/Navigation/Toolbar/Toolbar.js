@@ -1,16 +1,9 @@
 import React, {useState} from 'react';
 import {NavLink as RouterNav} from 'react-router-dom';
 import './Toolbar.css';
-import {
-    Collapse, Input,
-    Nav,
-    Navbar,
-    NavbarBrand,
-    NavLink,
-    NavbarToggler,
-    NavItem, InputGroup,
-} from "reactstrap";
+import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink,} from "reactstrap";
 import logo from '../../../assets/images/logo-white.png'
+import Search from "../Search/Search";
 
 const Toolbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +15,7 @@ const Toolbar = () => {
                 <NavbarBrand exact tag={RouterNav} to='/' ><img width='50' height='auto' src={logo} alt="main logo"/></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <InputGroup className='col-12 col-md-4 my-3 p-0 Search-bar'>
-                        <Input type='text' placeholder="Search the player" className=''/>
-                    </InputGroup>
+                    <Search/>
                     <Nav navbar className='Main-nav col-12 col-md-8'>
                         <NavItem className='mx-2'>
                             <NavLink onClick={toggle} exact tag={RouterNav} className='text-light' to='/' >Home</NavLink>

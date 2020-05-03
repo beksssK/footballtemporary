@@ -1,0 +1,17 @@
+.AdminTop{
+    background: url("../../assets/images/football-bg.jpg") 50% 80% no-repeat;
+    background-size: cover;
+}
+
+.required {
+    position: relative;
+}
+
+.required:after {
+    content: '*';
+    color: red;
+    position: absolute;
+    top: 27%;
+    right: -10px;
+    font-size: 20px;
+}

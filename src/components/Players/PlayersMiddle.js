@@ -3,7 +3,8 @@ import './PlayersMiddle.css';
 import SportsmanCard from "../SportsmanCard/SportsmanCard";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchFootballers} from "../../store/actions/footballersActions";
-import {Container, Row, Spinner} from "reactstrap";
+import {Container, Row} from "reactstrap";
+import Preloader from "../UI/Preloader/Preloader";
 
 
 const PlayersMiddle = (props) => {
@@ -20,22 +21,20 @@ const PlayersMiddle = (props) => {
             <Container>
                 {footballers.length ? (
                     <Row className='justify-content-center'>
-                        {footballers.length ? footballers[0].map(footballer => (
+                        {footballers.map(footballer => (
                             <SportsmanCard
-                                onClick={() => goToPlayer(footballer.id)}
-                                key={footballer.id}
-                                image={footballer.profile_photo}
-                                imgType={footballer.type_photo}
+                                onClick={() => goToPlayer(footballer._id)}
+                                key={footballer._id}
+                                image={footballer.profilePhoto}
                                 name={footballer.name}
                                 surname={footballer.surname}
                                 position={footballer.position}
-                                linkPhoto={footballer.link_photo}
                             />
-                        )) : null}
+                        ))}
                     </Row>
                 ) : (
                     <div className='text-center'>
-                        <Spinner className='Spinner mt-5' color="info" />
+                        <Preloader/>
                     </div>
                 )}
             </Container>

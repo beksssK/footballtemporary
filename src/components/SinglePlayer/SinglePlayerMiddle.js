@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react';
-import moment from 'moment';
 import './SinglePlayer.css';
-import placeHolder from '../../assets/images/placeholder_male1.jpg';
-import {Button, Col, Container, Row, Spinner} from "reactstrap";
+import {Button, Col, Container, Row, Table, UncontrolledCollapse} from "reactstrap";
 import {useDispatch, useSelector} from "react-redux";
-import {deleteFootballers, fetchSingleFootballer} from "../../store/actions/footballersActions";
+import {fetchSingleFootballer} from "../../store/actions/footballersActions";
+import SinglePlayerAdmin from "./SinglePlayerAdmin";
+import SinglePlayerGallery from "./SinglePlayerGallery";
+import FootballerThumbnail from "../FootballerThumbnail/FootballerThumbnail";
+import Preloader from "../UI/Preloader/Preloader";
 
 const SinglePlayerMiddle = (props) => {
     const user = useSelector(state => state.users.user);
@@ -13,73 +15,99 @@ const SinglePlayerMiddle = (props) => {
     useEffect(() => {
         dispatch(fetchSingleFootballer(props.params.id));
     }, [props.params.id, dispatch]);
-    const deleteFootballer = () => {
-        try {
-            if (user && user.role === 'admin') {
-                dispatch(deleteFootballers(props.params.id));
-            }
-        } catch (e) {
-            console.log(e);
-        }
-    };
-    const returnSocial = (social) => {
-        return <p className='my-3'><b>{social} </b> {singleFootballer && singleFootballer.social}</p>
-    };
-    let temp = 'hello';
-    if (singleFootballer && singleFootballer.id === parseInt(props.params.id)){
+
+    if (singleFootballer && singleFootballer._id === props.params.id) {
         return (
             <div className='SinglePlayerMiddle py-5'>
                 <Container>
                     <Row>
-                        <Col md={6}>
-                            <Row>
-                                <Col sm={6} md={5}>
-                                    <img
-                                        src={singleFootballer ? `data:${singleFootballer.type_photo};base64, ${singleFootballer.profile_photo}` : placeHolder}
-                                        width='100%' height='auto' alt=""/>
-                                </Col>
-                                <Col sm={6} md={7}>
-                                    <p className='my-3'><b>Name:</b> {singleFootballer && singleFootballer.name}</p>
-                                    <p className='my-3'><b>Surname:</b> {singleFootballer && singleFootballer.surname}</p>
-                                    <p className='my-3'><b>Age:</b> {singleFootballer && singleFootballer.age} <b
-                                        className='ml-2'>Height:</b> {singleFootballer && singleFootballer.height}</p>
-                                </Col>
-                            </Row>
+                        <Col md={4} className='px-4 px-sm-5 px-md-3'>
+                            <FootballerThumbnail image={singleFootballer && singleFootballer.profilePhoto}/>
                         </Col>
-                        <Col md={6}>
-                            <p className='my-3'><b>Place of
-                                birth: </b> {singleFootballer && singleFootballer.place_of_birth}</p>
-                            <p className='my-3'><b>Date of
-                                birth: </b> {singleFootballer && moment(singleFootballer.birthday).format('LL')}</p>
-                            <p className='my-3'><b>Citizenship: </b> {singleFootballer && singleFootballer.citizenship}</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={6}>
-                            <p className='my-3'><b>Current club: </b> {singleFootballer && singleFootballer.current_club}
-                            </p>
-                            <p className='my-3'><b>Position: </b> {singleFootballer && singleFootballer.position}</p>
-                        </Col>
-                        <Col md={6}>
-                            <p className='my-3'><b>Description: </b> {singleFootballer && singleFootballer.description}</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={4} className='my-3'>
-                            <p className='my-3'><b>Instagram: </b> {singleFootballer && singleFootballer.instagram}</p>
-                        </Col>
-                        <Col md={4} className='my-3'>
-                            <p className='my-3'><b>Facebook: </b> {singleFootballer && singleFootballer.facebook}</p>
-                        </Col>
-                        <Col md={4} className='my-3'>
-                            <p className='my-3'><b>Twitter: </b> {singleFootballer && singleFootballer.twitter}</p>
+                        <Col md={8} className='px-3 px-sm-5 px-md-3'>
+                            <Table dark className='mt-5 mt-md-0'>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Name: </th>
+                                    <td>{singleFootballer.name}</td>
+                                    <th>Nationality: </th>
+                                    <td>{singleFootballer.nationality}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Surname: </th>
+                                    <td>{singleFootballer.surname}</td>
+                                    <th>Citizenship: </th>
+                                    <td>{singleFootballer.citizenship}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Current Club: </th>
+                                    <td>{singleFootballer.club}</td>
+                                    <th>Age: </th>
+                                    <td>{singleFootballer.age}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Position: </th>
+                                    <td>{singleFootballer.position}</td>
+                                    <th>Height: </th>
+                                    <td>{singleFootballer.height}</td>
+                                </tr>
+                                </tbody>
+                            </Table>
+                            {singleFootballer.description ? (
+                                <p style={{borderRadius: '8px'}} className='bg-dark p-2 mt-4 mt-md-0'>
+                                    {singleFootballer.description}
+                                </p>
+                            ) : null}
                         </Col>
                     </Row>
-                    {user && user.role === 'admin' && (<Button onClick={deleteFootballer} color='danger'>Delete</Button>)}
-
-                    <Row>
-
+                    <Row className='pt-4 pb-3 justify-content-center'>
+                        {singleFootballer && singleFootballer.instagramLink ? (
+                            <>
+                                {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                                <a className='social SinglePlayerMiddle_social' href={singleFootballer.instagramLink} target='_blank'><i className="fab fa-instagram"/></a>
+                            </>
+                        ) : null}
+                        {singleFootballer && singleFootballer.facebookLink ? (
+                            <>
+                                {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                                <a className='social SinglePlayerMiddle_social' href={singleFootballer.facebookLink} target='_blank'><i className="fab fa-facebook-f"/></a>
+                            </>
+                        ) : null}
+                        {singleFootballer && singleFootballer.twitterLink ? (
+                            <>
+                                {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                                <a className='social SinglePlayerMiddle_social' href={singleFootballer.twitterLink} target='_blank'><i className="fab fa-twitter"/></a>
+                            </>
+                        ) : null}
                     </Row>
+                    <Row className='SinglePlayerMedia mt-3'>
+                        <Col md={6} className='mt-4 mb-5 px-4 px-sm-5 px-md-3'>
+                            <iframe
+                                title='framee'
+                                src={singleFootballer.videoLink ? "https://www.youtube.com/embed/" + singleFootballer.videoLink : "https://www.youtube.com/embed/bKOTKHtbM54"}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen/>
+                        </Col>
+                        {singleFootballer && singleFootballer.galleryImages.length ? (
+                            <Col md={6} className='mb-5 mt-4 px-4 px-sm-5 px-md-3'>
+                                <SinglePlayerGallery photoItems={singleFootballer.galleryImages}/>
+                            </Col>
+                        ) : null
+                        }
+                    </Row>
+                    {user && user.role === 'admin' && (
+                        <div className='pt-5'>
+                            <Button id='editorToggler' color="primary">Editor</Button>
+                            <UncontrolledCollapse toggler="#editorToggler">
+                                <SinglePlayerAdmin
+                                    galleryPhotos={singleFootballer.galleryImages}
+                                    params={props.params}
+                                    singleFootballer={singleFootballer}
+                                />
+                            </UncontrolledCollapse>
+                        </div>
+                    )}
                 </Container>
             </div>
         )
@@ -87,7 +115,7 @@ const SinglePlayerMiddle = (props) => {
         return (
             <div className='SinglePlayerMiddle py-5'>
                 <div className='text-center'>
-                    <Spinner className='Spinner mt-5' color="primary" />
+                    <Preloader/>
                 </div>
             </div>
         )

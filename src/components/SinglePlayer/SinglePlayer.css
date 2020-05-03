@@ -11,3 +11,70 @@
 .SinglePlayerMiddle img {
     border-radius: 8px;
 }
+
+.SinglePlayerMiddle_social {
+    width: 50px;
+    margin: 0 20px;
+    height: 50px;
+}
+
+
+.SinglePlayerMedia iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.SinglePlayerGallery {
+    width: 100%;
+}
+
+.SinglePlayerGallery img {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.SinglePlayerGallery .carousel {
+    width: 100%;
+    min-height: 400px;
+}
+
+.SinglePlayerGallery .carousel-inner {
+    max-height: 400px;
+}
+
+.SinglePlayerGallery .carousel-control-prev,
+.SinglePlayerGallery .carousel-control-next {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.SinglePlayerMiddle table {
+    border-radius: 8px;
+}
+
+@media all and (max-width: 1000px) {
+    .SinglePlayerGallery .carousel {
+        min-height: 300px;
+    }
+
+    .SinglePlayerMedia iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .SinglePlayerMiddle table {
+        font-size: 15px;
+    }
+    .SinglePlayerMiddle .table td,
+    .SinglePlayerMiddle .table th {
+        padding: 3px 5px;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .SinglePlayerMiddle table {
+        font-size: 12px;
+    }
+}

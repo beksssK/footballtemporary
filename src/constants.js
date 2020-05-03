@@ -1,1 +1,1 @@
-export const apiURL = 'https://heroku-springboot-backend.herokuapp.com';
+export const apiURL = 'https://hnbm-api.herokuapp.com';

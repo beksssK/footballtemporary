@@ -1,0 +1,58 @@
+*,
+*:after {
+    box-sizing: border-box;
+}
+
+.preload:before {
+    content: "";
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: 83%;
+    left: 50%;
+    margin-top: -3rem;
+    margin-left: -3rem;
+    background: url('./../../../assets/images/ball-preloader.png') 50% 50%;
+    background-size: cover;
+    z-index: 1;
+    animation: bounce 0.8s linear infinite;
+}
+.preload:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 83%;
+    left: 50%;
+    background: black;
+    opacity: 1;
+    width: 4rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-left: -1.8rem;
+    margin-top: 3rem;
+    filter: blur(1px);
+    animation: bounceShadow 0.8s linear infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    45% {
+        transform: translateY(-6rem);
+        animation-timing-function: ease-in;
+    }
+}
+@keyframes bounceShadow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(0.75);
+        opacity: 0.5;
+        animation-timing-function: ease-in;
+    }
+}
