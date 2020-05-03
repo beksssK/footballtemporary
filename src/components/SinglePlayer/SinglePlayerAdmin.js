@@ -7,6 +7,7 @@ import SinglePlayerGalleryAdmin from "./SinglePlayerGalleryAdmin";
 import SinglePlayerUpdate from "./SinglePlayerUpdate";
 
 const SinglePlayerAdmin = (props) => {
+    const [submitButton, setSubmitButton] = useState(false);
     const [formSuccess, setFormSuccess] = useState({is: false, message: ''});
     const [formError, setFormError] = useState({is: false, message: ''});
     const [footballerPhotos, setFootballerPhotos] = useState({images: []});
@@ -31,14 +32,16 @@ const SinglePlayerAdmin = (props) => {
             formData.append('galleryImages', footballerPhotos.images[i]);
         }
         try {
+            setSubmitButton(true);
             await axiosApi.post('/footballers/galleryPhoto/' + props.params.id, formData);
             setFormError({...formError, is: false, message: ""});
-            setFormSuccess({...formSuccess, is: true, message: 'Images were sent successfully'})
+            setFormSuccess({...formSuccess, is: true, message: 'Images were sent successfully. Reload the page'})
         } catch (e) {
             setFormSuccess({...formSuccess, is: false, message: ''});
             setFormError({...formError, is: true, message: 'Please choose files again!!!'});
             console.error(e);
         }
+        setSubmitButton(false)
     };
     const saveDeleteChanges = (filenames) => {
         dispatch(deleteFootballersGallery(props.params.id, filenames));
@@ -60,7 +63,7 @@ const SinglePlayerAdmin = (props) => {
                     </Col>
                     <Col xs={6} md={6}>
                         <Input type='file' name='images' className='mb-2' multiple onChange={onFileChange}/>
-                        <Button onClick={submitImages} color='info'>Submit Photos</Button>
+                        <Button disabled={submitButton} onClick={submitImages} color='info'>Submit Photos</Button>
                     </Col>
                 </Row>
             </Form>
