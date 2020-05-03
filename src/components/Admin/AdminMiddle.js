@@ -20,7 +20,7 @@ const AdminMiddle = () => {
             await axiosApi.post('/footballers', formData);
             setFormError({...formError, is: false, message: ''});
             setFormSuccess({...formSuccess, is: true, message: 'Footballer is added successfully'});
-            setTimeout(() => dispatch(push('/')), 2000)
+            dispatch(push('/'));
         } catch (e) {
             setFormSuccess({...formSuccess, is: false, message: ''});
             setFormError({...formError, is: true, message: 'Fill in the marked fields'});
