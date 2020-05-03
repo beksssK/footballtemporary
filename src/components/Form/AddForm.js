@@ -121,7 +121,7 @@ const AddForm = (props) => {
                         </Col>
                     </Row>
                     <Row className='justify-content-end'>
-                        <Button className='mt-4 mr-3' type='submit' color='primary'>{props.saveText}</Button>
+                        <Button className='mt-4 mr-3' disabled={props.postButton} type='submit' color='primary'>{props.saveText}</Button>
                     </Row>
                 </FormGroup>
             </Form>

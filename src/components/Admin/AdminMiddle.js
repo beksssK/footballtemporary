@@ -8,6 +8,7 @@ import {push} from "connected-react-router";
 const AdminMiddle = () => {
     const [formSuccess, setFormSuccess] = useState({is: false, message: ''});
     const [formError, setFormError] = useState({is: false, message: ''});
+    const [postButton, setPostButton] = useState(false);
     const dispatch = useDispatch();
     const postPlayer = async (event, form) => {
         event.preventDefault();
@@ -17,6 +18,7 @@ const AdminMiddle = () => {
             formData.append(key, form[key]);
         });
         try{
+            setPostButton(true);
             await axiosApi.post('/footballers', formData);
             setFormError({...formError, is: false, message: ''});
             setFormSuccess({...formSuccess, is: true, message: 'Footballer is added successfully'});
@@ -26,7 +28,7 @@ const AdminMiddle = () => {
             setFormError({...formError, is: true, message: 'Fill in the marked fields'});
             console.error(e);
         }
-
+        setPostButton(false);
     };
     return (
         <div className='AdminMiddle'>
@@ -37,6 +39,7 @@ const AdminMiddle = () => {
                     formSuccess={formSuccess}
                     formError={formError}
                     saveText='Add the footballer'
+                    postButton={postButton}
                 />
             </Container>
         </div>
