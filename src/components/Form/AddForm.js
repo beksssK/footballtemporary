@@ -34,9 +34,15 @@ const AddForm = (props) => {
             setPlayerForm(props.form);
         }
     }, [props.form]);
+    const postPlayer = async (event) => {
+        await props.postPlayer(event, playerForm);
+        if (!props.form) {
+            setPlayerForm(initialState);
+        }
+    };
     return (
         <div className='py-4 text-primary'>
-            <Form onSubmit={(event) => props.postPlayer(event, playerForm)}>
+            <Form onSubmit={postPlayer}>
                 <FormGroup>
                     <Row>
                         <Col md={6}>

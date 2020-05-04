@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import AddForm from "../Form/AddForm";
-import {useDispatch} from "react-redux";
 import axiosApi from "../../axiosApi";
-import {push} from "connected-react-router";
 
 const SinglePlayerUpdate = (props) => {
     const [oldPhoto, setOldPhoto] = useState('');
     const [formSuccess, setFormSuccess] = useState({is: false, message: ''});
     const [formError, setFormError] = useState({is: false, message: ''});
-    const dispatch = useDispatch();
     useEffect(() => {
         setOldPhoto(props.singleFootballer.profilePhoto);
     }, [props.singleFootballer.profilePhoto]);
@@ -19,12 +16,13 @@ const SinglePlayerUpdate = (props) => {
         Object.keys(form).forEach(key => {
             formData.append(key, form[key]);
         });
-        formData.append('oldPhoto', oldPhoto);
+        if (form.profilePhoto !== oldPhoto) {
+            formData.append('oldPhoto', oldPhoto);
+        }
         try{
             await axiosApi.put('/footballers/' + props.footballerId, formData);
             setFormError({...formError, is: false, message: ''});
             setFormSuccess({...formSuccess, is: true, message: 'Footballer info is updated successfully'});
-            setTimeout(() => dispatch(push('/')), 2000)
         } catch (e) {
             setFormSuccess({...formSuccess, is: false, message: ''});
             setFormError({...formError, is: true, message: 'Error occured. Please reload the page'});
