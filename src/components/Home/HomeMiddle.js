@@ -21,14 +21,19 @@ const HomeMiddle = () => {
             caption: 'our secretary'
         },
         {
-            src: windowWidth.matches ? require('../../assets/staff/gManager2.jpg') : require('../../assets/staff/gManager.jpg'),
+            src: windowWidth.matches ? require('../../assets/staff/gManager.jpg') : require('../../assets/staff/gManager.jpg'),
             altText: 'General Manager',
             caption: 'general manager'
         },
         {
-            src: windowWidth.matches ? require('../../assets/staff/accountantImg.jpg') : require('../../assets/staff/accountantImg2.jpg'),
+            src: require('../../assets/staff/accountantImg.jpg'),
             altText: 'Accountant',
             caption: 'our accountant'
+        },
+        {
+            src: require('../../assets/staff/lawyer-slide.jpg'),
+            altText: 'Lawyer',
+            caption: 'Corporate Lawyer'
         }
     ];
     if(windowWidth.matches){
