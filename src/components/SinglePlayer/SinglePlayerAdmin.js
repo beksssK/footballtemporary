@@ -13,6 +13,7 @@ const SinglePlayerAdmin = (props) => {
     const [footballerPhotos, setFootballerPhotos] = useState({images: []});
     const user = useSelector(state => state.users.user);
     const dispatch = useDispatch();
+    console.log(props.singleFootballer);
     const deleteSingleFootballer = () => {
         try {
             if (user && user.role === 'admin') {
