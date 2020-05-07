@@ -1,6 +1,7 @@
 import React from 'react';
 
 import imageNotAvailable from '../../assets/images/image-not-available.jpg';
+import {filesUrl} from "../../constants";
 
 const styles = {
     width: '100%',
@@ -12,7 +13,7 @@ const FootballerThumbnail = props => {
     let image = imageNotAvailable;
 
     if(props.image){
-        image = props.image;
+        image = filesUrl + props.image;
     }
     return <img alt="product" src={image} style={styles} />;
 };

@@ -11,7 +11,9 @@ const SinglePlayerUpdate = (props) => {
     }, [props.singleFootballer.profilePhoto]);
     const updateSave = async (event, form) => {
         event.preventDefault();
-        form.videoLink = form.videoLink.substring(form.videoLink.length - 11);
+        if (form.videoLink){
+            form.videoLink = form.videoLink.substring(form.videoLink.length - 11);
+        }
         const formData = new FormData();
         Object.keys(form).forEach(key => {
             formData.append(key, form[key]);
