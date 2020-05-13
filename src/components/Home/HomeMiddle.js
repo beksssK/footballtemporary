@@ -21,7 +21,7 @@ const HomeMiddle = () => {
             caption: 'our secretary'
         },
         {
-            src: windowWidth.matches ? require('../../assets/staff/gManager.jpg') : require('../../assets/staff/gManager.jpg'),
+            src: windowWidth.matches ? require('../../assets/staff/secretary.jpg') : require('../../assets/staff/secretary2.jpg'),
             altText: 'General Manager',
             caption: 'general manager'
         },

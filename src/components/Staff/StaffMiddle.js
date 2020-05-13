@@ -1,5 +1,5 @@
 import React from 'react';
-import gManagerImg from '../../assets/staff/generalManager1.jpg';
+import gManagerImg from '../../assets/staff/secretary3.jpg';
 import secretaryImg from '../../assets/staff/secretary3.jpg';
 import organizerImg from '../../assets/staff/organizer2.jpg';
 import CEOImg from '../../assets/staff/CEO3.jpg';
@@ -10,8 +10,8 @@ import lawyerImg from '../../assets/staff/lawyer.jpg'
 const STAFF = {
     gManager: {
         position: 'General Manager',
-        name: 'Nurudeen Kasim',
-        info: 'Our general manger Mr Nurudeen Kasim manages the external and internal affairs of the company.He also plays another role as the company\'s adviser. He manages the affairs of the company,he is a member of the board of directors as well',
+        name: 'Anastasiia Korshunova',
+        info: 'Our general manger Anastasiia Korshunova manages the external and internal affairs of the company.He also plays another role as the company\'s adviser. She manages the affairs of the company, she is a member of the board of directors as well',
         photo: gManagerImg
     },
     secretary: {
@@ -22,8 +22,8 @@ const STAFF = {
     },
     organizer: {
         position: 'Organizer',
-        name: 'Allen Okunur',
-        info: 'Our Organizer Mr Allen carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Mr Allen coordinate with our general manager Mr Nurudeen Kasim in the arrangements of day - day activities and company travel plans in accordance of our clients',
+        name: 'Hazo Otu',
+        info: 'Our Organizer Hazo Otu carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Hazo Otu coordinate with our general manager Anastasia in the arrangements of day - day activities and company travel plans in accordance of our clients',
         photo: organizerImg
     },
     CEO: {
