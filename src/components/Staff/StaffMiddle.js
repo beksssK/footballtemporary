@@ -40,8 +40,8 @@ const STAFF = {
     },
     partner: {
         position: 'Partner',
-        name: 'Josip Zbiljski',
-        info: 'Mr. Josip is one of the company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
+        name: '',
+        info: 'He is one of the company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
         photo: partnerImg
     },
     webDev: {
