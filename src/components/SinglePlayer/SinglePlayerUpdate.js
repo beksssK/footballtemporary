@@ -6,6 +6,7 @@ const SinglePlayerUpdate = (props) => {
     const [oldPhoto, setOldPhoto] = useState('');
     const [formSuccess, setFormSuccess] = useState({is: false, message: ''});
     const [formError, setFormError] = useState({is: false, message: ''});
+    const [updateButton, toggleUpdateButton] = useState(false);
     useEffect(() => {
         setOldPhoto(props.singleFootballer.profilePhoto);
     }, [props.singleFootballer.profilePhoto]);
@@ -22,12 +23,15 @@ const SinglePlayerUpdate = (props) => {
             formData.append('oldPhoto', oldPhoto);
         }
         try{
+            toggleUpdateButton(true);
             await axiosApi.put('/footballers/' + props.footballerId, formData);
             setFormError({...formError, is: false, message: ''});
             setFormSuccess({...formSuccess, is: true, message: 'Footballer info is updated successfully'});
+            toggleUpdateButton(false);
         } catch (e) {
             setFormSuccess({...formSuccess, is: false, message: ''});
             setFormError({...formError, is: true, message: 'Error occured. Please reload the page'});
+            toggleUpdateButton(false);
             console.error(e);
         }
     };
@@ -39,6 +43,7 @@ const SinglePlayerUpdate = (props) => {
                 formSuccess={formSuccess}
                 formError={formError}
                 saveText='Update info'
+                postButton={updateButton}
             />
         </>
     );

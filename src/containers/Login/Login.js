@@ -6,7 +6,7 @@ import {connect} from "react-redux";
 
 class Login extends Component {
     state = {
-        userName: '',
+        username: '',
         password: ''
     };
     inputChangeHandler = event => {
@@ -28,9 +28,9 @@ class Login extends Component {
                 )}
                 <Form onSubmit={this.submitFormHandler}>
                     <FormElement
-                        propertyName='userName'
+                        propertyName='username'
                         title='Username'
-                        value={this.state.userName}
+                        value={this.state.username}
                         onChange={this.inputChangeHandler}
                         type='text'
                         autoComplete='current-username'

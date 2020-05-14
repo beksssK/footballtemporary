@@ -1,12 +1,16 @@
 import React, {useState} from 'react';
-import {Container} from "reactstrap";
+import {Button, Container} from "reactstrap";
 import AddForm from "../Form/AddForm";
 import axiosApi from "../../axiosApi";
+import {useDispatch} from "react-redux";
+import {logoutUser} from "../../store/actions/usersActions";
 
 const AdminMiddle = () => {
+    const dispatch = useDispatch();
     const [formSuccess, setFormSuccess] = useState({is: false, message: ''});
     const [formError, setFormError] = useState({is: false, message: ''});
     const [postButton, setPostButton] = useState(false);
+
     const postPlayer = async (event, form) => {
         event.preventDefault();
         form.videoLink = form.videoLink.substring(form.videoLink.length - 11);
@@ -28,7 +32,7 @@ const AdminMiddle = () => {
         setPostButton(false);
     };
     return (
-        <div className='AdminMiddle'>
+        <div className='AdminMiddle py-4'>
             <Container>
                 <h2 className='my-3'>Add footballers</h2>
                 <AddForm
@@ -38,6 +42,7 @@ const AdminMiddle = () => {
                     saveText='Add the footballer'
                     postButton={postButton}
                 />
+                <Button color='danger' class='my-3' onClick={() => dispatch(logoutUser())}>Logout</Button>
             </Container>
         </div>
     );

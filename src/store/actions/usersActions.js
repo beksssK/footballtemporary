@@ -1,4 +1,5 @@
 import {push} from 'connected-react-router';
+import axiosApi from "../../axiosApi";
 
 export const LOGIN_USER_SUCCESS = 'LOGIN_USER_SUCCESS';
 export const LOGIN_USER_ERROR = 'LOGIN_USER_ERROR';
@@ -8,25 +9,31 @@ const loginUserSuccess = (user) => ({type: LOGIN_USER_SUCCESS, user});
 const logoutUserSuccess = () => ({type: LOGOUT_USER_SUCCESS});
 const loginUserError = (error) => ({type: LOGIN_USER_ERROR, error});
 
-const tempChecker = {userName: 'allen', password: 'allenhnbm'};
-
 export const loginUser = (userData) => {
     return async dispatch => {
         try {
-            if (userData.userName === tempChecker.userName && userData.password === tempChecker.password){
-                dispatch(loginUserSuccess({userName: userData.userName, password: userData.password, role: 'admin'}));
+            const response = await axiosApi.post('/users/sessions', userData);
+            dispatch(loginUserSuccess(response.data));
+            console.log(response.data);
+            if(response.data && response.data.role === 'admin') {
                 dispatch(push('/admin'));
             } else {
-                dispatch(loginUserError({message: 'Wrong password or username'}))
+                dispatch(push('/'));
             }
         } catch (e) {
             console.log(e);
+            dispatch(loginUserError(e));
         }
     }
 };
 
 export const logoutUser = () => {
-    return async dispatch => {
+    return async (dispatch, getState) => {
+        const token = getState().users.user.token;
+        const headers = {"Authorization": "Token " + token};
+
+        await axiosApi.delete('/users/sessions', {headers});
+
         dispatch(logoutUserSuccess());
         dispatch(push('/'));
     }

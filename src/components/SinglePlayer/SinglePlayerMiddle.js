@@ -10,7 +10,7 @@ import Preloader from "../UI/Preloader/Preloader";
 
 const SinglePlayerMiddle = (props) => {
     const user = useSelector(state => state.users.user);
-    const singleFootballer = useSelector(state => state.allPlayers.singleFootballer);
+    const singleFootballer = useSelector(state => state.footballers.singleFootballer);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(fetchSingleFootballer(props.params.id));
@@ -96,7 +96,7 @@ const SinglePlayerMiddle = (props) => {
                         ) : null
                         }
                     </Row>
-                    {user && user.role === 'admin' && (
+                    {user && (user.role === 'admin' || user.role === 'moderator') && (
                         <div className='pt-5'>
                             <Button id='editorToggler' color="primary">Editor</Button>
                             <UncontrolledCollapse toggler="#editorToggler">

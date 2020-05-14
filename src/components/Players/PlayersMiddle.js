@@ -8,7 +8,7 @@ import Preloader from "../UI/Preloader/Preloader";
 
 
 const PlayersMiddle = (props) => {
-    const footballers = useSelector(state => state.allPlayers.allFootballers);
+    const footballers = useSelector(state => state.footballers.allFootballers);
     const dispatch = useDispatch();
     const goToPlayer = (id) => {
         props.history.push('/players/' + id);
