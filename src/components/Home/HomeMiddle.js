@@ -6,29 +6,19 @@ const HomeMiddle = () => {
     let windowWidth = window.matchMedia("(max-width: 600px)");
     const items = [
         {
-            src: windowWidth.matches ? require('../../assets/staff/CEO11.jpg') : require('../../assets/staff/CEO11.jpg') ,
-            altText: 'Our CEO',
-            caption: 'our CEO'
+            src: require('../../assets/staff/CEO1.jpg'),
+            altText: 'CEO',
+            caption: 'CEO'
         },
         {
             src: require('../../assets/staff/organizer.jpg'),
             altText: 'Organizer',
-            caption: 'our organizer'
+            caption: 'Organizer'
         },
         {
-            src: windowWidth.matches ? require('../../assets/staff/secretary.jpg') : require('../../assets/staff/secretary2.jpg'),
-            altText: 'Secretary',
-            caption: 'our secretary'
-        },
-        {
-            src: windowWidth.matches ? require('../../assets/staff/secretary.jpg') : require('../../assets/staff/secretary2.jpg'),
+            src: windowWidth.matches ? require('../../assets/staff/gManager1.jpg') : require('../../assets/staff/gManager2.jpg'),
             altText: 'General Manager',
-            caption: 'general manager'
-        },
-        {
-            src: require('../../assets/staff/accountantImg.jpg'),
-            altText: 'Accountant',
-            caption: 'our accountant'
+            caption: 'General Manager'
         },
         {
             src: require('../../assets/staff/lawyer-slide.jpg'),
