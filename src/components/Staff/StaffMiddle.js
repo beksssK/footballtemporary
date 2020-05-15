@@ -1,29 +1,20 @@
 import React from 'react';
-import gManagerImg from '../../assets/staff/secretary3.jpg';
-import secretaryImg from '../../assets/staff/secretary3.jpg';
+import gManagerImg from '../../assets/staff/gManager.jpg';
 import organizerImg from '../../assets/staff/organizer2.jpg';
-import CEOImg from '../../assets/staff/CEO3.jpg';
-import accountantImg from '../../assets/staff/accountant2.jpg';
+import CEOImg from '../../assets/staff/CEO.jpg';
 import partnerImg from '../../assets/staff/partner2.jpg';
-import webDevImg from '../../assets/staff/webDev.jpg';
 import lawyerImg from '../../assets/staff/lawyer.jpg'
 const STAFF = {
     gManager: {
         position: 'General Manager',
         name: 'Anastasiia Korshunova',
-        info: 'Our general manger Anastasiia Korshunova manages the external and internal affairs of the company.He also plays another role as the company\'s adviser. She manages the affairs of the company, she is a member of the board of directors as well',
+        info: 'Our general manger Anastasiia Korshunova manages the external and internal affairs of the company. She also plays another role as the company\'s adviser. She manages the affairs of the company, she is a member of the board of directors as well',
         photo: gManagerImg
-    },
-    secretary: {
-        position: 'Secretary',
-        name: 'Anastasiia Korshunova',
-        info: 'Our secretary Anastasiia Korshunova is a diligent hard worker,. She plays a role to organise and undertake a variety of administrative task. She also jot down expenses and plan of then company such as travel costs, event details, and up keep fees ect...',
-        photo: secretaryImg
     },
     organizer: {
         position: 'Organizer',
-        name: 'Hazo Otu',
-        info: 'Our Organizer Hazo Otu carry out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Hazo Otu coordinate with our general manager Anastasia in the arrangements of day - day activities and company travel plans in accordance of our clients',
+        name: 'Greta Okunor',
+        info: 'Our organizer Greta Okunor carries out the administrative task associated with running of the agency. alongside the day-to- day responsibilities.Our organizer Greta Okunor coordinate with our general manager Anastasia in the arrangements of day - day activities and company travel plans in accordance of our clients',
         photo: organizerImg
     },
     CEO: {
@@ -32,23 +23,11 @@ const STAFF = {
         info: 'Our CEO Mr Hazo Otu.  he is responsible for making major corporate decisions, managing the overall operations and resources of the company, acting as the main point of communication between the board of directors.',
         photo: CEOImg
     },
-    accountant: {
-        position: 'Accountant',
-        name: 'Greta Okunor',
-        info: 'Our accountant Greta Okunor prepares financial information to Management, she prepare asset, liability and capital account entries. She also maintains customer confidence and protects operations by keeping financial information confidential.she is honest and a hard worker in all duties of the accounting sector.',
-        photo: accountantImg
-    },
     partner: {
         position: 'Partner',
         name: '',
         info: 'He is one of the company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
         photo: partnerImg
-    },
-    webDev: {
-        position: 'Web Developer',
-        name: 'Beks Kadyrbekov',
-        info: 'Beks is our IT engineer. He supports and maintains computer systems. He is responsible for the company data and manages our official website.',
-        photo: webDevImg
     },
     lawyer: {
         position: 'Legal adviser & corporate lawyer',
@@ -99,48 +78,12 @@ const StaffMiddle = () => {
                 </section>
                 <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.secretary.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.secretary.position}</h4>
-                        <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
-                    </div>
-                    <div className='info__item'>
-                        <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}/>
-                    </div>
-                </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.accountant.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.accountant.position}</h4>
-                        <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
-                    </div>
-                    <div className='info__item'>
-                        <div className='info__pic accountant__pic' style={{backgroundImage: `url(${STAFF.accountant.photo})`}}>
-
-                        </div>
-                    </div>
-                </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
                         <h2 className='info__title staff__title'>{STAFF.partner.name}</h2>
                         <h4 className='text-center text-info staff__position'>{STAFF.partner.position}</h4>
                         <p className='info__text info__text-left'>{STAFF.partner.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}>
-
-                        </div>
-                    </div>
-                </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.webDev.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.webDev.position}</h4>
-                        <p className='info__text info__text-left'>{STAFF.webDev.info}</p>
-                    </div>
-                    <div className='info__item'>
-                        <div className='info__pic webdev__pic' style={{backgroundImage: `url(${STAFF.webDev.photo})`}}>
-
-                        </div>
+                        <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section staff__info__section info__staff container'>
@@ -150,9 +93,7 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.lawyer.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}>
-
-                        </div>
+                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}/>
                     </div>
                 </section>
             </div>
@@ -170,16 +111,12 @@ const StaffMiddle = () => {
                         <p className='info__text info__text-left'>{STAFF.CEO.info}</p>
                     </div>
                     <div className='info__item'>
-                        <div className='info__pic ceo__pic' style={{backgroundImage: `url(${STAFF.CEO.photo})`}}>
-
-                        </div>
+                        <div className='info__pic ceo__pic' style={{backgroundImage: `url(${STAFF.CEO.photo})`}}/>
                     </div>
                 </section>
                 <section className='info__section staff__info__section info__what container'>
                     <div className='info__item'>
-                        <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}>
-
-                        </div>
+                        <div className='info__pic gManager__pic' style={{backgroundImage: `url(${STAFF.gManager.photo})`}}/>
                     </div>
                     <div className='info__item'>
                         <h2 className='info__title staff__title'>{STAFF.gManager.name}</h2>
@@ -199,33 +136,7 @@ const StaffMiddle = () => {
                 </section>
                 <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <div className='info__pic secretary__pic' style={{backgroundImage: `url(${STAFF.secretary.photo})`}}>
-
-                        </div>
-                    </div>
-                    <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.secretary.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.secretary.position}</h4>
-                        <p className='info__text info__text-right'>{STAFF.secretary.info}</p>
-                    </div>
-                </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.accountant.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.accountant.position}</h4>
-                        <p className='info__text info__text-left'>{STAFF.accountant.info}</p>
-                    </div>
-                    <div className='info__item'>
-                        <div className='info__pic accountant__pic' style={{backgroundImage: `url(${STAFF.accountant.photo})`}}>
-
-                        </div>
-                    </div>
-                </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
-                        <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}>
-
-                        </div>
+                        <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}/>
                     </div>
                     <div className='info__item'>
                         <h2 className='info__title staff__title'>{STAFF.partner.name}</h2>
@@ -235,26 +146,12 @@ const StaffMiddle = () => {
                 </section>
                 <section className='info__section staff__info__section info__staff container'>
                     <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.webDev.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.webDev.position}</h4>
-                        <p className='info__text info__text-left'>{STAFF.webDev.info}</p>
-                    </div>
-                    <div className='info__item'>
-                        <div className='info__pic webdev__pic' style={{backgroundImage: `url(${STAFF.webDev.photo})`}}>
-
-                        </div>
-                    </div>
-                </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
-                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}>
-
-                        </div>
-                    </div>
-                    <div className='info__item'>
                         <h2 className='info__title staff__title'>{STAFF.lawyer.name}</h2>
                         <h4 className='text-center text-info staff__position'>{STAFF.lawyer.position}</h4>
-                        <p className='info__text info__text-right'>{STAFF.lawyer.info}</p>
+                        <p className='info__text info__text-left'>{STAFF.lawyer.info}</p>
+                    </div>
+                    <div className='info__item'>
+                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}/>
                     </div>
                 </section>
             </div>
