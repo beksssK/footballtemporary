@@ -5,6 +5,7 @@ import {deleteFootballer, deleteFootballersGallery} from "../../store/actions/fo
 import axiosApi from "../../axiosApi";
 import SinglePlayerGalleryAdmin from "./SinglePlayerGalleryAdmin";
 import SinglePlayerUpdate from "./SinglePlayerUpdate";
+import {logoutUser} from "../../store/actions/usersActions";
 
 const SinglePlayerAdmin = (props) => {
     const [submitButton, setSubmitButton] = useState(false);
@@ -88,8 +89,10 @@ const SinglePlayerAdmin = (props) => {
                     <Button onClick={deleteSingleFootballer} color='danger'>Remove the footballer</Button>
                 </div>
             )}
-
             <SinglePlayerUpdate footballerId={props.params.id} singleFootballer={props.singleFootballer}/>
+            <Row className='justify-content-end pr-4'>
+                <Button onClick={() => dispatch(logoutUser())} color='danger'>Logout</Button>
+            </Row>
         </>
     );
 };
