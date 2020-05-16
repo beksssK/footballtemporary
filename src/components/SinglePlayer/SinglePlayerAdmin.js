@@ -82,9 +82,13 @@ const SinglePlayerAdmin = (props) => {
                     </UncontrolledCollapse>
                 </>
             ) : null}
-            <div className='mt-5 mb-2'>
-                <Button onClick={deleteSingleFootballer} color='danger'>Remove the footballer</Button>
-            </div>
+
+            {props.user && props.user.role === 'admin' && (
+                <div className='mt-5 mb-2'>
+                    <Button onClick={deleteSingleFootballer} color='danger'>Remove the footballer</Button>
+                </div>
+            )}
+
             <SinglePlayerUpdate footballerId={props.params.id} singleFootballer={props.singleFootballer}/>
         </>
     );

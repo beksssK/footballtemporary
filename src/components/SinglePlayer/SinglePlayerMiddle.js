@@ -27,7 +27,7 @@ const SinglePlayerMiddle = (props) => {
                         <Col md={8} className='px-3 px-sm-5 px-md-3'>
                             <Table dark className='mt-5 mt-md-0'>
                                 <tbody>
-                                <tr>
+                                <tr className='table-first'>
                                     <th scope="row">Name: </th>
                                     <td>{singleFootballer.name}</td>
                                     <th>Nationality: </th>

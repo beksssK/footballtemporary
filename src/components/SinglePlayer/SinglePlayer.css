@@ -52,6 +52,11 @@
     border-radius: 8px;
 }
 
+.table-first td,
+.table-first th {
+    border: none;
+}
+
 @media all and (max-width: 1000px) {
     .SinglePlayerGallery .carousel {
         min-height: 300px;
