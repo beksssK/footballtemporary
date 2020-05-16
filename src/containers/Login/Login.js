@@ -21,7 +21,7 @@ class Login extends Component {
     };
     render() {
         return (
-            <Container className='mt-5 pt-5'>
+            <Container className='py-5'>
                 <h2>Login</h2>
                 {this.props.error && (
                     <Alert color='danger'>{this.props.error.message}</Alert>
