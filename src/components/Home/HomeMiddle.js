@@ -20,11 +20,6 @@ const HomeMiddle = () => {
             altText: 'General Manager',
             caption: 'General Manager'
         },
-        {
-            src: require('../../assets/staff/lawyer-slide.jpg'),
-            altText: 'Lawyer',
-            caption: 'Corporate Lawyer'
-        }
     ];
     if(windowWidth.matches){
         return (

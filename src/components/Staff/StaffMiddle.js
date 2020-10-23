@@ -3,7 +3,6 @@ import gManagerImg from '../../assets/staff/gManager.jpg';
 import organizerImg from '../../assets/staff/organizer2.jpg';
 import CEOImg from '../../assets/staff/CEO.jpg';
 import partnerImg from '../../assets/staff/partner2.jpg';
-import lawyerImg from '../../assets/staff/lawyer.jpg'
 const STAFF = {
     gManager: {
         position: 'General Manager',
@@ -29,13 +28,6 @@ const STAFF = {
         info: 'He is one of the company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
         photo: partnerImg
     },
-    lawyer: {
-        position: 'Legal adviser & corporate lawyer',
-        name: 'Nurlan Kursanbekov',
-        info: 'Nurlan Kursanbekov is the company\'s lawyer and legal adviser.he is responsible for effective support of international and local transactions. He has repeatedly received corporate awards for professional and effective protection of company\'s  interests.Then he had worked as an expert in the international project of the American Bar association (ABA Rolly) "Improvement of the national legislation of the Kyrgyz Republic in the Field of telecommunications and communications. He is also engaged in scientific research of taxation and financial law.',
-        photo: lawyerImg
-    }
-
 };
 
 const StaffMiddle = () => {
@@ -86,16 +78,6 @@ const StaffMiddle = () => {
                         <div className='info__pic partner__pic' style={{backgroundImage: `url(${STAFF.partner.photo})`}}/>
                     </div>
                 </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.lawyer.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.lawyer.position}</h4>
-                        <p className='info__text info__text-left'>{STAFF.lawyer.info}</p>
-                    </div>
-                    <div className='info__item'>
-                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}/>
-                    </div>
-                </section>
             </div>
         );
     } else {
@@ -142,16 +124,6 @@ const StaffMiddle = () => {
                         <h2 className='info__title staff__title'>{STAFF.partner.name}</h2>
                         <h4 className='text-center text-info staff__position'>{STAFF.partner.position}</h4>
                         <p className='info__text info__text-right'>{STAFF.partner.info}</p>
-                    </div>
-                </section>
-                <section className='info__section staff__info__section info__staff container'>
-                    <div className='info__item'>
-                        <h2 className='info__title staff__title'>{STAFF.lawyer.name}</h2>
-                        <h4 className='text-center text-info staff__position'>{STAFF.lawyer.position}</h4>
-                        <p className='info__text info__text-left'>{STAFF.lawyer.info}</p>
-                    </div>
-                    <div className='info__item'>
-                        <div className='info__pic lawyer__pic' style={{backgroundImage: `url(${STAFF.lawyer.photo})`}}/>
                     </div>
                 </section>
             </div>
