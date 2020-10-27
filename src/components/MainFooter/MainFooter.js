@@ -13,7 +13,7 @@ const MainFooter = () => {
                    </Col>
                     <Col md='4'>
                         <p className='text-info FooterInfo_title mb-1'>Address</p>
-                        <p>Jaiyl Baatyra 77.68 Bishkek Kyrgyzstan</p>
+                        <p>Bishkek Kyrgyzstan</p>
                     </Col>
                     <Col md='4'>
                         <p className='text-info FooterInfo_title mb-1'>Email</p>

@@ -46,7 +46,7 @@ const ContactBottom = () => {
                             </div>
                             <div className='ContactBlock__card_text'>
                                 <h5 className='text-info'>Address</h5>
-                                <p>Jaiyl Baatyra 77.68 Bishkek Kyrgyzstan</p>
+                                <p>Bishkek Kyrgyzstan</p>
                             </div>
                         </div>
                         <div className='ContactBlock__card'>
