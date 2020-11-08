@@ -111,7 +111,7 @@
         background-size: 177%;
     }
     .staff__pic {
-        width: 368px;
+        max-width: 368px;
     }
     .info__staff_item {
         width: 100%;

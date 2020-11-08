@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Layout from "./components/Layout/Layout";
 import {Redirect, Route, Switch} from "react-router-dom";
-import Home from "./containers/Home/Home";
+import HomePage from "./containers/Home/HomePage";
 import Contact from "./containers/Contact/Contact";
 import Admin from "./containers/Admin/Admin";
 import Players from "./containers/Players/Players";
@@ -20,7 +20,7 @@ const App = () => {
     return (
         <Layout>
             <Switch>
-                <Route path='/' exact component={Home}/>
+                <Route path='/' exact component={HomePage}/>
                 <Route path='/contacts' exact component={Contact}/>
                 <ProtectedRoute isAllowed={user && user.role === 'admin'} path='/admin' exact component={Admin}/>
                 <Route path='/players' exact component={Players}/>
