@@ -34,6 +34,9 @@
     padding-left: 10px;
 }
 
+.Collapse {
+    height: unset !important;
+}
 
 
 @media all and (max-width: 768px) {

@@ -14,7 +14,7 @@ const Toolbar = () => {
             <Navbar expand="md" className='w-100 container text-uppercase' dark>
                 <NavbarBrand exact tag={RouterNav} to='/' ><img width='50' height='auto' src={logo} alt="main logo"/></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
+                <Collapse isOpen={isOpen} navbar className="Collapse">
                     <Search/>
                     <Nav navbar className='Main-nav col-12 col-md-8'>
                         <NavItem className='mx-2'>
