@@ -1,19 +1,19 @@
-.ContactTop{
+.Contact__top{
     background: url("../../assets/images/bg5.jpg") 50% 0 no-repeat;
     background-size: cover;
 }
 
-.Contact-top__header {
+.Contact__header {
     width: 270px;
 }
 
-.Contact-top__title {
+.Contact__title {
     background: rgba(0, 0, 0, 0.6);
     padding: 0 5px;
 }
 
 @media all and (max-width: 1000px){
-    .ContactTop {
+    .Contact__top {
         background-size: contain;
     }
 }

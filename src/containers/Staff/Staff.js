@@ -1,11 +1,13 @@
 import React from 'react';
-import StaffTop from "../../components/Staff/StaffTop";
+//
 import StaffMiddle from "../../components/Staff/StaffMiddle";
+import PageTop from "../../components/Page/PageTop/PageTop";
+import "./Staff.css";
 
 const Staff = () => {
     return (
         <>
-            <StaffTop/>
+            <PageTop classname="Staff" title="Our Staff"/>
             <StaffMiddle/>
         </>
     );

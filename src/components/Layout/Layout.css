@@ -20,22 +20,6 @@
     height: 100%;
 }
 
-.page-top__header {
-    padding-top: 200px;
-    margin: 0 auto 0 60%;
-    width: 200px;
-}
-
-.page-top__title{
-    color: #fff;
-    font-weight: 700;
-    font-size: 70px;
-}
-
-.page-top{
-    background-size: contain;
-}
-
 @media (max-width: 700px) {
     .page-top__header {
         margin: 0 10% 0 auto;

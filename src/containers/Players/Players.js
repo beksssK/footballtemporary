@@ -1,13 +1,15 @@
 import React from 'react';
-import PlayersTop from "../../components/Players/PlayersTop";
+//
 import PlayersMiddle from "../../components/Players/PlayersMiddle";
+import PageTop from "../../components/Page/PageTop/PageTop";
+import "./Players.css";
 
 
 const Players = (props) => {
 
     return (
         <>
-            <PlayersTop/>
+            <PageTop classname="Players" title="Our players"/>
             <PlayersMiddle history={props.history}/>
         </>
     );

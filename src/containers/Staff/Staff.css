@@ -1,9 +1,8 @@
-.PlayersTop{
+.Staff__top{
     background: url("../../assets/images/football-bg.jpg") 50% 80% no-repeat;
     background-size: cover;
 }
 
-.playersTop__title{
-    font-size: 53px;
-    padding-bottom: 10px;
+.Staff__header{
+    padding-top: 170px;
 }

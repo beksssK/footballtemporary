@@ -1,0 +1,15 @@
+.Home__top {
+    background: url("./../../assets/images/bg4.jpg") 50% 0 no-repeat;
+    background-size: cover;
+}
+
+.Home__title {
+    text-align: center;
+    background: rgba(0,0,0,.6);
+}
+
+@media all and (max-width: 1000px) {
+    .Home__top {
+        background-size: contain;
+    }
+}

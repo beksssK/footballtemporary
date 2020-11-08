@@ -1,11 +1,13 @@
 import React from 'react';
-import HomeTop from "../../components/Home/HomeTop";
+//
+import "./HomePage.css";
 import HomeMiddle from "../../components/Home/HomeMiddle";
+import PageTop from "../../components/Page/PageTop/PageTop";
 
 const Home = () => {
     return (
         <>
-            <HomeTop/>
+            <PageTop classname="Home" title="HNBM"/>
             <HomeMiddle/>
         </>
     );

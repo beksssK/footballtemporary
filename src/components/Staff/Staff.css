@@ -1,13 +1,3 @@
-.StaffTop{
-    background: url("../../assets/images/football-bg.jpg") 50% 80% no-repeat;
-    background-size: cover;
-}
-
-.staff__header{
-    padding-top: 170px;
-}
-
-
 .staff__info__section {
     border-bottom: 1px solid #6e6d6d;
     padding-bottom: 62px;
