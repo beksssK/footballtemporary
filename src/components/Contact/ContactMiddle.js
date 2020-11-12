@@ -14,7 +14,6 @@ const ContactMiddle = () => {
                         aria-hidden="false" tabIndex="0"/>
                 </div>
             </Container>
-
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import {Alert, Button, Col, Container, Form, Input, InputGroup, Row} from "reactstrap";
+import ContactBlockCard from "./ContactBlockCard";
 
 const ContactBottom = () => {
     const [contactForm, setContactForm] = useState({name: '', phoneNum: '', text: ''});
@@ -40,33 +41,9 @@ const ContactBottom = () => {
                 <div className='ContactBlock-left'>
                     <h3>Contact us</h3>
                     <div className='ContactBlock__info'>
-                        <div className='ContactBlock__card'>
-                            <div className='ContactBlock__card_icon'>
-                                <i className="fas fa-map-marker-alt"/>
-                            </div>
-                            <div className='ContactBlock__card_text'>
-                                <h5 className='text-info'>Address</h5>
-                                <p>Bishkek Kyrgyzstan</p>
-                            </div>
-                        </div>
-                        <div className='ContactBlock__card'>
-                            <div className='ContactBlock__card_icon'>
-                                <i className="fas fa-mobile-alt"/>
-                            </div>
-                            <div className='ContactBlock__card_text'>
-                                <h5 className='text-info'>Phone</h5>
-                                <p>+996 709 44 09 61</p>
-                            </div>
-                        </div>
-                        <div className='ContactBlock__card'>
-                            <div className='ContactBlock__card_icon'>
-                                <i className="far fa-envelope"/>
-                            </div>
-                            <div className='ContactBlock__card_text'>
-                                <h5 className='text-info'>Mail</h5>
-                                <p>hazootu@gmail.com</p>
-                            </div>
-                        </div>
+                        <ContactBlockCard icon={<i className="fas fa-map-marker-alt"/>} title="Address" text="Bishkek, Kyrgyzstan"/>
+                        <ContactBlockCard icon={<i className="fas fa-mobile-alt"/>} title="Phone" text="+996 709 44 09 61"/>
+                        <ContactBlockCard icon={<i className="far fa-envelope"/>} title="Mail" text="hazootu@gmail.com"/>
                     </div>
                 </div>
                 <div className='ContactBlock-right'>

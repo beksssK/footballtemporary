@@ -3,6 +3,9 @@ import gManagerImg from '../../assets/staff/gManager.jpg';
 import organizerImg from '../../assets/staff/organizer2.jpg';
 import CEOImg from '../../assets/staff/CEO.jpg';
 import partnerImg from '../../assets/staff/partner2.jpg';
+
+import "./Staff.css";
+
 const STAFF = {
     gManager: {
         position: 'General Manager',
