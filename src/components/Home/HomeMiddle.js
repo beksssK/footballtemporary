@@ -6,6 +6,7 @@ import InfoSection from "../Section/InfoSection";
 import ceo from "../../assets/staff/CEO1.jpg";
 import organizer from "../../assets/staff/organizer.jpg";
 import gManager from "../../assets/staff/gManager1.jpg";
+import mainPartner from "../../assets/staff/mainPartner.jpeg"
 import useWindowWidth from "../../hooks/useWindowWidth";
 
 const items = [
@@ -24,6 +25,11 @@ const items = [
         altText: 'General Manager',
         caption: 'General Manager'
     },
+    {
+      src: mainPartner,
+      altText: "Main Partner",
+      caption: "Main Partner",
+    }
 ];
 
 const generalInfo = {

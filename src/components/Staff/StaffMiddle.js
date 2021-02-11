@@ -35,7 +35,7 @@ const STAFF = {
         photo: partnerImg
     },
     mainPartner: {
-        position: '',
+        position: 'partner',
         name: 'Arsomersujev Aslanbek Grosny',
         info: 'Mr. Aslanbek is one of the company\'s main partner, he sometimes represent our agency in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team also coaches to enabling us  identify and offer top talent for specific player positions required by  soccer clubs',
         photo: mainPartner
