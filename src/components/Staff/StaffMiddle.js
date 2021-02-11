@@ -3,6 +3,7 @@ import gManagerImg from '../../assets/staff/gManager.jpg';
 import organizerImg from '../../assets/staff/organizer2.jpg';
 import CEOImg from '../../assets/staff/CEO.jpg';
 import partnerImg from '../../assets/staff/partner2.jpg';
+import mainPartner from "../../assets/staff/mainPartner.jpeg"
 
 import "./Staff.css";
 import StaffCard from "./StaffCard";
@@ -30,9 +31,15 @@ const STAFF = {
     partner: {
         position: 'Partner',
         name: '',
-        info: 'He is one of the company\'s partner, he sometimes represent our company in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team enabling us to identify and offer top talent for specific player positions required by the soccer clubs.',
+        info: 'He is one of our company\'s partner who coordinates with our other partners to raise our soccer industry.',
         photo: partnerImg
     },
+    mainPartner: {
+        position: '',
+        name: 'Arsomersujev Aslanbek Grosny',
+        info: 'Mr. Aslanbek is one of the company\'s main partner, he sometimes represent our agency in the negotiations of contract of our clients in soccer clubs. He also cooperate with some top scouting team also coaches to enabling us  identify and offer top talent for specific player positions required by  soccer clubs',
+        photo: mainPartner
+    }
 };
 
 const StaffMiddle = () => {
