@@ -59,6 +59,12 @@
     background-position: 50% 4%;
     background-size: 170%;
 }
+
+.mainPartner__pic {
+    background-size: cover;
+    background-position: 61% 8%;
+
+}
 @media all and (max-width: 999px) {
     .staff__title {
         font-size: 27px;
@@ -108,11 +114,6 @@
     .staff__info__section {
         padding-bottom: 40px;
         margin-bottom: 40px;
-    }
-    .mainPartner__pic {
-        background-size: cover;
-        background-position: 61% 8%;
-
     }
 }
 
